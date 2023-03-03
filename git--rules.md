@@ -6,3 +6,4 @@ Commit:
 - commit has got parent (except root commit - the first one)
 Commit amend - useful for fixing of the last commit (changes the commit message or add some files)
 -branch - set of connected commit with name
+- .....
