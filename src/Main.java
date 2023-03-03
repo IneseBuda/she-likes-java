@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
@@ -15,5 +17,25 @@ public class Main {
         //sout+enter
         System.out.println(myDaughterAge);
         int myDaughter2Age=5;
+        //use canel case starting with lower letter
+        String myName = "Inese";
+        String mySurname = "Buda";
+        System.out.println(myName + " " + mySurname);
+
+        String five = "5";
+        String otherFive = "5";
+        System.out.println(five + otherFive);
+
+        //true and false
+        boolean trueValue = true;
+        trueValue = false;
+        System.out.println(trueValue);
+
+        // 11.0
+        int eleven = 11;
+
+        // double type for number with fraction part
+        double trueEleven = 11.0;
+
     }
 }
