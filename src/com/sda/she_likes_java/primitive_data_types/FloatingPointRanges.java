@@ -1,4 +1,4 @@
-package com.sda.she_likes_java.numbers;
+package com.sda.she_likes_java.primitive_data_types;
 //names of the class should start with capital letter - always
 //names of the variables should start with lower case letter:
 public class FloatingPointRanges {
@@ -14,6 +14,7 @@ public class FloatingPointRanges {
         System.out.println("double number");
         System.out.println("minimal float number is: " + Double.MIN_VALUE);
         System.out.println("maximum float number is: " + Double.MAX_VALUE);
+
 
     }
 }
