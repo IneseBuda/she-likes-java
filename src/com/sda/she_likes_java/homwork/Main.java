@@ -1,3 +1,6 @@
+//packages use reverse domain names
+package com.sda.she_likes_java.homwork;
+
 import java.sql.SQLOutput;
 
 public class Main {

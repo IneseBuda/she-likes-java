@@ -1,3 +1,5 @@
+package com.sda.she_likes_java.homwork;
+
 import java.util.Scanner;
 
 public class Calculator {
@@ -16,6 +18,8 @@ public class Calculator {
         System.out.println("You provided number: " + secondNumber);
         int sum = firstNumber + secondNumber;
         System.out.println("Sum is: " + sum);
+
+
 
 
     }
