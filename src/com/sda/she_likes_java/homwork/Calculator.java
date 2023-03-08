@@ -13,9 +13,11 @@ public class Calculator {
        Scanner inputReader = new Scanner(System.in);
        firstNumber = inputReader.nextInt();
         System.out.println("You provided number: " + firstNumber);
-        System.out.println("Provide second number:");
+        //\n free new line
+        System.out.println("\n\n\nProvide second number:");
         secondNumber = inputReader.nextInt();
         System.out.println("You provided number: " + secondNumber);
+        System.out.println();
         int sum = firstNumber + secondNumber;
         System.out.println("Sum is: " + sum);
 
