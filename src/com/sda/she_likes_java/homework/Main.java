@@ -1,7 +1,5 @@
 //packages use reverse domain names
-package com.sda.she_likes_java.homwork;
-
-import java.sql.SQLOutput;
+package com.sda.she_likes_java.homework;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,13 +11,13 @@ public class Main {
         // needs good name e.g. myDaughterAge
         // needs type of variable
         // that data type limit possible set of allowed values
-        // int - integer numbers
-        int myDaughterAge=2;
+        // int - integer com.sda.she_likes_java.numbers
+        int myDaughterAge = 2;
         // assigning new value to variable
-        myDaughterAge=5;
+        myDaughterAge = 5;
         //sout+enter
         System.out.println(myDaughterAge);
-        int myDaughter2Age=5;
+        int myDaughter2Age = 5;
         //use canel case starting with lower letter
         String myName = "Inese";
         String mySurname = "Buda";
@@ -50,14 +48,14 @@ public class Main {
         int product = 5 * 8;
         System.out.println("Product of 5 and 8 is: " + product);
 
-        double quotient = 5.0/8.5;
+        double quotient = 5.0 / 8.5;
         System.out.println("Quotient of 5.0 and 8.5 is: " + quotient);
         System.out.println("Reminder");
-        int result = 9/4;
+        int result = 9 / 4;
         System.out.println("result is:" + result);
 
 /// modulo operator - remainder operator: 9/4 = 2 and 1(reminder)
-        result = 9%4;
+        result = 9 % 4;
         System.out.println("and now result is:" + result);
     }
 }
