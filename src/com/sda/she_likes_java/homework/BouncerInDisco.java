@@ -28,7 +28,7 @@ public class BouncerInDisco {
             System.out.println("Welcome to disco");
 
         }
-        if (personAge >= 16) if (personHight >= 170) {
+    if (personAge >= 16) if (personHight >= 170) {
             System.out.println("Welcome to disco");
         } else {
             System.out.println("You do not meet the criteria for attending a disco!");
