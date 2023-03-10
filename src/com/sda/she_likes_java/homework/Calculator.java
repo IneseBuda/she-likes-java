@@ -1,11 +1,11 @@
-package com.sda.she_likes_java.homwork;
+package com.sda.she_likes_java.homework;
 
 import java.util.Scanner;
 
 public class Calculator {
     public static void main(String[] args) {
         System.out.println("calculator...");
-       System.out.println("Calculation sum of two numbers");
+       System.out.println("Calculation sum of two com.sda.she_likes_java.numbers");
         System.out.println("Provide first number:");
        int firstNumber;
        int secondNumber;
