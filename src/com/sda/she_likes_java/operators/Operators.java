@@ -38,16 +38,15 @@ public class Operators {
         firstValue = true;
         secondValue = !firstValue;
         System.out.println("!true is:" + secondValue);
-
-        boolean polite = false;
-        if (!polite){
+// negation of isPolite = naughty
+        boolean isPolite = false;
+        if (!isPolite){
             System.out.println("You're not polite, or just naughty");
-
 
         }
         boolean naughty = true;
         if (naughty){
-            System.out.println("You're no polite, or just naughty");
+            System.out.println("You're not polite, or just naughty");
         }
 
     }
