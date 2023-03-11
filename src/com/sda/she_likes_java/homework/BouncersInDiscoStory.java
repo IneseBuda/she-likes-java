@@ -39,9 +39,9 @@ public class BouncersInDiscoStory {
             System.out.println("You are very good singer! True or False?");
             boolean canSingAgain = inputReader.nextBoolean();
 
-            boolean isAllowedToPartyStill = age >= 18 || hight >= 1.90;
+            boolean isAllowedToPartyStill = secondAge >= 18 || secondHight >= 1.90;
 
-            if (isAllowedToPartyStill || canSing) {
+            if (isAllowedToPartyStill || canSingAgain) {
                 System.out.println("Ok, welcome!");
 
             }
