@@ -30,6 +30,22 @@ public class BouncersInDiscoStory {
         } else {
             System.out.println(declinMessage);
 
+            System.out.println("\n Entrance with old bouncer.");
+            System.out.println("Visitor: Can I come in?");
+            System.out.println("Old bouncer: How old are You?");
+            int secondAge = inputReader.nextInt();
+            System.out.println("Let me know your hight:");
+            double secondHight = inputReader.nextDouble();
+            System.out.println("You are very good singer! True or False?");
+            boolean canSingAgain = inputReader.nextBoolean();
+
+            boolean isAllowedToPartyStill = age >= 18 || hight >= 1.90;
+
+            if (isAllowedToPartyStill || canSing) {
+                System.out.println("Ok, welcome!");
+
+            }
+
 
         }
     }
