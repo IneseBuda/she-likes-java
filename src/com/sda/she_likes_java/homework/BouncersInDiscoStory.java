@@ -12,23 +12,25 @@ import java.util.Scanner;
 public class BouncersInDiscoStory {
     public static void main(String[] args) {
         System.out.println("Homework BouncersInDiscoStory");
-
-Scanner inputReader = new Scanner(System.in);
-String declinMessage = "Sorry, you are not allowed go inside!";
-int age = inputReader.nextInt();
-double hight = inputReader.nextDouble();
-boolean canSing = inputReader.nextBoolean();
-
-
+        System.out.println("Entrance with young bouncer.");
         System.out.println("Hello, how old are You?");
-        boolean isAllowedToParty = age >= 18 && hight >= 1.90 && canSing;
-        if (isAllowedToParty) {
+        Scanner inputReader = new Scanner(System.in);
+        String declinMessage = "Sorry, you are not allowed to go to party!";
+
+        int age = inputReader.nextInt();
+        System.out.println("Let me know your hight:");
+        double hight = inputReader.nextDouble();
+        System.out.println("You are very good singer! True or False?");
+        boolean canSing = inputReader.nextBoolean();
+
+        boolean isAllowedToParty = age >= 18 && hight >= 1.90;
+
+        if (isAllowedToParty && canSing) {
             System.out.println("Have a great time in party!");
-        }else{
+        } else {
             System.out.println(declinMessage);
+
+
         }
-
-
-
     }
 }
