@@ -69,6 +69,8 @@ public class Operators {
         hasGrenade = false;
         isTerrorist = hasGun || hasGrenade;
         System.out.println("false || false is:" + isTerrorist);
+
+
     }
 }
 // !(value >=18)
