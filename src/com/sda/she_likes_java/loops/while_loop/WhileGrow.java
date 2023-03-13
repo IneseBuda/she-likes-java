@@ -12,6 +12,7 @@ public class WhileGrow {
             ageOfTheKid++;// this is the like in the line over this one
         }
 
-        System.out.println("Go to party!!!");
+        System.out.println("I am " + ageOfTheKid + " years old, Mama: yes, go!");
+
     }
 }
