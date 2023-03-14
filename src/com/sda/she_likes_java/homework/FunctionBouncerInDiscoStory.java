@@ -9,6 +9,7 @@ public class FunctionBouncerInDiscoStory {
         checkedByOldBouncer();
 
     }
+
     public static boolean checkedByYoungBouncer() {
         System.out.println("First try with young bouncer!");
         System.out.println("Can I go to party?");
@@ -22,38 +23,36 @@ public class FunctionBouncerInDiscoStory {
         hight = inputReader.nextDouble();
         System.out.println("Can You sing well? True or False");
         canSing = inputReader.nextBoolean();
-        boolean result = age >= 18 && hight >= 1.90 && canSing;
-        if (result) {
+        boolean canEnterTheParty = age >= 18 && hight >= 1.90 && canSing;
+        if (canEnterTheParty) {
             System.out.println("Welcome to party!");
-        }else{
+        } else {
             System.out.println("Please, go home!");
         }
-        return result;
+        return canEnterTheParty;
 
     }
-public static boolean checkedByOldBouncer(){
-    System.out.println("Second try to get in through older bouncer!");
-    System.out.println("Visitor:Hello! Could you let me in?");
-    int age;
-    double hight;
-    boolean canSing;
-    Scanner inputReader = new Scanner(System.in);
-    System.out.println("Old bouncer:How old are You?");
-    age = inputReader.nextInt();
-    System.out.println("How tall are You?");
-    hight = inputReader.nextDouble();
-    System.out.println("Can You sing well? True or False");
-    canSing = inputReader.nextBoolean();
-    boolean result = age >= 18 || hight >= 1.90 || canSing;
-    if (result) {
-        System.out.println("Ok, come in!");
-    }else{
-        System.out.println("Please,really go home!");
+
+    public static boolean checkedByOldBouncer() {
+        System.out.println("Second try to get in through older bouncer!");
+        System.out.println("Visitor:Hello! Could you let me in?");
+        int age;
+        double hight;
+        boolean canSing;
+        Scanner inputReader = new Scanner(System.in);
+        System.out.println("Old bouncer:How old are You?");
+        age = inputReader.nextInt();
+        System.out.println("How tall are You?");
+        hight = inputReader.nextDouble();
+        System.out.println("Can You sing well? True or False");
+        canSing = inputReader.nextBoolean();
+        boolean canEnterTheParty = age >= 18 || hight >= 1.90 || canSing;
+        if (canEnterTheParty) {
+            System.out.println("Ok, come in!");
+        } else {
+            System.out.println("Please,really go home!");
+        }
+
+        return canEnterTheParty;
     }
-    return result;
-
-}
-
-
-
 }
