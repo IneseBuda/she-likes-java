@@ -33,12 +33,12 @@ public class FunctionBouncerInDiscoStory {
     }
 public static boolean checkedByOldBouncer(){
     System.out.println("Second try to get in through older bouncer!");
-    System.out.println("Hello! Could you let me in?");
+    System.out.println("Visitor:Hello! Could you let me in?");
     int age;
     double hight;
     boolean canSing;
     Scanner inputReader = new Scanner(System.in);
-    System.out.println("How old are You?");
+    System.out.println("Old bouncer:How old are You?");
     age = inputReader.nextInt();
     System.out.println("How tall are You?");
     hight = inputReader.nextDouble();
