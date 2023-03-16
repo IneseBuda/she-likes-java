@@ -12,20 +12,20 @@ public class GuessTheNumberGameWithBreak {
 
         Scanner inputReader = new Scanner(System.in);
         System.out.println("Play game with me!");
+        System.out.println("Guess a number between 1 and 20");
         int userAnswer;
         do {
-            if (numberOfTrials <= 0) {
+            userAnswer = inputReader.nextInt();
+            numberOfTrials--;
+
+            if (userAnswer == someRandomNumber) {
+                System.out.println("Great, You win!");
+
+            } else if (numberOfTrials <= 0) {
                 System.out.println("You have no more attempts");
                 break;
             }
 
-                System.out.println("Guess a number between 1 and 20");
-
-            userAnswer = inputReader.nextInt();
-            numberOfTrials--;
-            if (userAnswer == someRandomNumber) {
-                System.out.println("Great, You win!");
-            }
         }
         while (userAnswer != someRandomNumber);
 
