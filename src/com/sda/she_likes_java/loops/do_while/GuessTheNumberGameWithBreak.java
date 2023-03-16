@@ -19,7 +19,7 @@ public class GuessTheNumberGameWithBreak {
                 break;
             }
 
-            System.out.println("Guess a number between 1 and 20");
+                System.out.println("Guess a number between 1 and 20");
 
             userAnswer = inputReader.nextInt();
             numberOfTrials--;
