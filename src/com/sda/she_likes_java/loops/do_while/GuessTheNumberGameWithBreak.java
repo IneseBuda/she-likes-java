@@ -16,6 +16,7 @@ public class GuessTheNumberGameWithBreak {
         int userAnswer;
         do {
             userAnswer = inputReader.nextInt();
+            System.out.println("Guess a number between 1 and 20");
             numberOfTrials--;
 
             if (userAnswer == someRandomNumber) {
