@@ -24,9 +24,9 @@ public class RandomSortNumbers {
         int number3 = randomNumber.nextInt(10);
         System.out.println(number3);
 
-         int[] arr_int = {number1, number2, number3};
-        Arrays.sort(arr_int);
-        System.out.println("Numbers from smallest to largest" + Arrays.toString(arr_int));
+         int[] randomNumbers = {number1, number2, number3};
+        Arrays.sort(randomNumbers);
+        System.out.println("Numbers from smallest to largest" + Arrays.toString(randomNumbers));
     }
 }
 
