@@ -14,7 +14,7 @@ public class Arrey {
             myFond[index] = index;
         }
         for (int index = 0; index < myFond.length; index++){
-            System.out.println("My fond eur:" + index + "is:" + (index * 3));
+            System.out.println("My fond eur:" + index + "\t is: " + (index * 3) + "eur");
         }
     }
 }
