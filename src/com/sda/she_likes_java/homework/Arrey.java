@@ -11,10 +11,10 @@ public class Arrey {
         int[] myFond = new int[100];
 
         for (int index = 0; index < myFond.length; index++){
-            myFond[index] = index;
+            myFond[index] = 3 * index;
         }
         for (int index = 0; index < myFond.length; index++){
-            System.out.println("My fond eur:" + index + "\t is: " + (index * 3) + "eur");
+            System.out.println("My fond eur:" + index + "\t is: " + myFond[index] + "eur");
         }
     }
 }
