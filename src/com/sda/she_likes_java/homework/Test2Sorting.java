@@ -13,41 +13,64 @@ public class Test2Sorting {
 
         Random randomNumber = new Random();
 
-        int number1 = randomNumber.nextInt(10);
-        System.out.println(number1);
-        int number2 = randomNumber.nextInt(10);
-        System.out.println(number2);
-        int number3 = randomNumber.nextInt(10);
-        System.out.println(number3);
+        int firstNumber = randomNumber.nextInt(10);
+        System.out.println(firstNumber);
+        int secondNumber = randomNumber.nextInt(10);
+        System.out.println(secondNumber);
+        int thirdNumber = randomNumber.nextInt(10);
+        System.out.println(thirdNumber);
 
+        // ascending order
+        // first min value
         int min;
         int middle;
         int max;
 
-        min = number1;
-        if (number2 < min) {
-            min = number2;
+        // min
+        min = firstNumber;
+        if (secondNumber < min) {
+            min = secondNumber;
         }
-       if (number3 < min) {
-           min = number3;
-       } else {
-            min = number1;
+        if (thirdNumber < min) {
+            min = thirdNumber;
         }
-        middle = number2;
-        if (number3 < middle && number3 > min) {
-            middle = number3;
-        }
-        max = number3;
-        if (number3 > middle && number3 > min) {
-            max = number3;
 
+        // max
+        max = firstNumber;
+        if (secondNumber > max) {
+            max = secondNumber;
         }
-        System.out.println("Order of number from smallest:" + min + middle + max);
+        if (thirdNumber > max) {
+            max = thirdNumber;
+        }
+
+        // middle
+        if (firstNumber > min && firstNumber < max) {
+            middle = firstNumber;
+        } else if (secondNumber > min && secondNumber < max) {
+            middle = secondNumber;
+        } else if (thirdNumber > min && thirdNumber < max) {
+            middle = thirdNumber;
+        } else if (firstNumber == secondNumber || firstNumber == thirdNumber) {
+            middle = firstNumber;
+        } else {
+            middle = secondNumber;
+        }
+
+
+        System.out.println("Before sorting");
+        System.out.println("first: " + firstNumber);
+        System.out.println("second: " + secondNumber);
+        System.out.println("third: " + thirdNumber);
+
+        System.out.println();
+
+        System.out.println("Sorted in ascending order");
+        System.out.println("min: " + min);
+        System.out.println("middle: " + middle);
+        System.out.println("max: " + max);
     }
 }
-
-
-
 
 
 
