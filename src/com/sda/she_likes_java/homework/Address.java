@@ -26,9 +26,7 @@ public class Address {
         first.regionLetter = "LV";
         first.postalCode = 2150;
 
-        System.out.println(" %s %d - %d, %s, %s, %s - %d ".formatted(first.street, first.streetNumber,
-                first.flatNumber, first.city, first.country, first.regionLetter, first.postalCode));
-        System.out.println("Your additional address:");
+
 
         Address addition = new Address();
         addition.street = "Brocēnu street";
@@ -38,6 +36,10 @@ public class Address {
         addition.country = "Latvia";
         addition.regionLetter = "LV";
         addition.postalCode = 4321;
+
+        System.out.println(" %s %d - %d, %s, %s, %s - %d ".formatted(first.street, first.streetNumber,
+                first.flatNumber, first.city, first.country, first.regionLetter, first.postalCode));
+        System.out.println("Your additional address:");
 
         System.out.println(" %s %d - %d, %s, %s, %s - %d ".formatted(addition.street, addition.streetNumber,
                 addition.flatNumber, addition.city, addition.country, addition.regionLetter, addition.postalCode));
