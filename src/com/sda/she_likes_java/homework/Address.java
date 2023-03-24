@@ -11,11 +11,7 @@ public class Address {
 
     public static void main(String[] args) {
         System.out.println("Your address:");
-        // int streetNumber = 12;
-        //int flatNumber = 6;
-        //String street = "Kr.Baqrona";
-        //String city = "Sigulda";
-        //String country = "Latvia";
+
 
         Address first = new Address();
         first.street = "Barona street";
@@ -44,6 +40,21 @@ public class Address {
         System.out.println(" %s %d - %d, %s, %s, %s - %d ".formatted(addition.street, addition.streetNumber,
                 addition.flatNumber, addition.city, addition.country, addition.regionLetter, addition.postalCode));
 
+        System.out.println(first);
+        System.out.println(addition);
+    }
+
+    @Override
+    public String toString() {
+        return "Address{" +
+                "country='" + country + '\'' +
+                ", city='" + city + '\'' +
+                ", street='" + street + '\'' +
+                ", streetNumber=" + streetNumber +
+                ", flatNumber=" + flatNumber +
+                ", regionLetter='" + regionLetter + '\'' +
+                ", postalCode=" + postalCode +
+                '}';
 
     }
 }
