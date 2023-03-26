@@ -1,4 +1,5 @@
 package com.sda.she_likes_java.homework;
+
 /*
 Exercise 15.
 Create a Parent class containing the following variables:
@@ -11,7 +12,6 @@ Create a Parent class containing the following variables:
 public class Parent {
     String name;
     String surname;
-
 
 
     public static void main(String[] args) {
@@ -34,7 +34,11 @@ public class Parent {
         Person secondChild = new Person();
         secondChild.name = "Roberts";
         System.out.println();
-
+        System.out.println("Family information:");
+        System.out.println("Mother info: %s %s\nFather info: %s %s".formatted(mummy.name, mummy.surname, father.name, father.surname));
+        System.out.println("Address:\n%s %d - %d, %s, %s, %s - %d ".formatted(first.street, first.streetNumber,
+                first.flatNumber, first.city, first.country, first.regionLetter, first.postalCode));
+        System.out.println("Children: \n%s \n%s".formatted(firstChild.name, secondChild.name));
 
     }
 }
