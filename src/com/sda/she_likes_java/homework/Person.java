@@ -1,8 +1,8 @@
 package com.sda.she_likes_java.homework;
 
 public class Person {
-    String name;
-    String surname;
-    int age;
-    String address;
+   public String name;
+   public String surname;
+  public   int age;
+   public String address;
 }

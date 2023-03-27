@@ -12,6 +12,9 @@ Create a Parent class containing the following variables:
 public class Parent {
     String name;
     String surname;
+    Person firstChild;
+    Person secondChild;
+    Address address;
 
 
     public static void main(String[] args) {
@@ -39,6 +42,5 @@ public class Parent {
         System.out.println("Address:\n%s %d - %d, %s, %s, %s - %d ".formatted(first.street, first.streetNumber,
                 first.flatNumber, first.city, first.country, first.regionLetter, first.postalCode));
         System.out.println("Children: \n%s \n%s".formatted(firstChild.name, secondChild.name));
-
     }
 }
