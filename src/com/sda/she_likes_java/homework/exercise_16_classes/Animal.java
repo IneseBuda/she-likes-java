@@ -1,9 +1,9 @@
 package com.sda.she_likes_java.homework.exercise_16_classes;
 
 public class Animal {
-    String name;
-    int age;
-    String breed;
+   private String name;
+  private   int age;
+   private String breed;
 
     public Animal() {
     }
@@ -22,6 +22,9 @@ public class Animal {
                 ", breed='" + breed + '\'' +
                 '}';
     }
+
+
+
 
     public static void main(String[] args) {
         Animal animalinfo=new Animal("Bentlijs",2,"Labrador");

@@ -33,6 +33,12 @@ public class Owner {
     }
 
 
+   public Animal getAnimalinfo() {return animalinfo;}
+    public void setAnimalinfo(Animal animalinfo) {
+      this.animalinfo = animalinfo;
+   }
+
+
     @Override
     public String toString() {
         return "Owner{" +
@@ -44,7 +50,9 @@ public class Owner {
     }
 
     public static void main (String[] args) {
-        Owner owner=new Owner("Inese","Buda","Dog",null);
+
+       Animal animalinfo=new Animal("Bentlijs",2,"Labrador");
+        Owner owner=new Owner("Inese","Buda","Dog",animalinfo);
         System.out.println("The owner info:"+owner);
     }
 
