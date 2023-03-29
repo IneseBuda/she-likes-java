@@ -33,11 +33,39 @@ public class Owner {
     }
 
 
-   public Animal getAnimalinfo() {return animalinfo;}
-    public void setAnimalinfo(Animal animalinfo) {
-      this.animalinfo = animalinfo;
-   }
+    public Animal getAnimalinfo() {
+        return animalinfo;
+    }
 
+    public void setAnimalinfo(Animal animalinfo) {
+        this.animalinfo = animalinfo;
+    }
+
+
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public String getAnimal() {
+        return animal;
+    }
+
+    public void setAnimal(String animal) {
+        this.animal = animal;
+    }
 
     @Override
     public String toString() {
@@ -56,4 +84,8 @@ public class Owner {
         System.out.println("The owner info:"+owner);
     }
 
-}
+
+
+
+    }
+

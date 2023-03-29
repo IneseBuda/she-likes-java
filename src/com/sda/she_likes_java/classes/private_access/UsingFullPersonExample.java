@@ -6,8 +6,9 @@ public class UsingFullPersonExample {
 
     public static void main(String[] args) {
         FullPerson maybeMe  = new FullPerson("Inese","Buda",41,null);
-      // maybeMe.age= -1;
+      //maybeMe.age= -1;
         System.out.println("my age:" +maybeMe.getAge());
+
         System.out.println("me before age decreasing:"+ maybeMe);
         maybeMe.setAge(-1);
         System.out.println("me after failed trial to decrease age:"+ maybeMe);

@@ -38,7 +38,7 @@ public class FullPerson {
 
     public void setAge(int age) {
         if(age >0) {
-            this.age = age;
+          this.age = age;
         }
     }
 
@@ -62,7 +62,7 @@ public class FullPerson {
                 '}';
     }
 public void describeYourself(){
-    System.out.println("Hi, I'm" + name);
+    System.out.println("Hi, I'm " + name);
 
 }
 public static void genericDescription(){
@@ -72,7 +72,7 @@ public static void genericDescription(){
     public static void main(String[] args) {
         FullAddress address = new FullAddress("Italy", "Roma", "La Rpamnis", "007");
         FullPerson person= new FullPerson("Inese","Buda",41,address);
-        System.out.println("Person is:"+ person);
+        System.out.println("Person is: "+ person);
 
         person.describeYourself();
 
