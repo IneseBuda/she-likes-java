@@ -3,6 +3,7 @@ package com.sda.she_likes_java.objects;
 public class HouseExample {
     public static void main(String[] args) {
         House myHouse = new House(4,2);
+        myHouse.setNumberOfFloors(2);
         System.out.println("I've got new house:" + myHouse);
 
         System.out.println("Currently mu house has got" +myHouse.getNumberOfRoom() + "room");
@@ -24,6 +25,20 @@ public class HouseExample {
         System.out.println("Currently the house looks like this:"  + myHouse);
         System.out.println("Mary:" + wife);
         System.out.println("Jack:" + husband);
+
+        myHouse = new House(1,1);
+        System.out.println("Now myHouse reference: " + myHouse);
+        System.out.println("Mary:" + wife);
+        System.out.println("Jack:" + husband);
+
+        myHouse= new House(10,10);
+        wife.setHouse(myHouse);
+        System.out.println("Mary:" + wife);
+        System.out.println("Jack:" + husband);
+        wife.setHouse(husband.getHouse());
+        System.out.println("Mary lives again with husband" +wife);
+
+
 
     }
 }
