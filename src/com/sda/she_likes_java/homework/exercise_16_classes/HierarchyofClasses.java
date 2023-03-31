@@ -6,14 +6,6 @@ public class HierarchyofClasses {
     public static void main(String[] args) {
         Owner ownerinfo = new Owner();
         Animal animalInfo = new Animal();
-        //animalInfo.getAge();
-      //  animalInfo.getName();
-       // animalInfo.getBreed();
-
-        //ownerinfo.getName();
-       // ownerinfo.getSurname();
-       // ownerinfo.getAnimal();
-       // ownerinfo.getAnimalinfo();
 
 
         animalInfo.setAge(2);
