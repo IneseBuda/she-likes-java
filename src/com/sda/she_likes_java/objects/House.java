@@ -17,6 +17,14 @@ public class House {
         this.numberOfBathrooms = numberOfBathrooms;
     }
 
+    public int getNumberOfBathrooms() {
+        return numberOfBathrooms;
+    }
+
+    public void setNumberOfBathrooms(int numberOfBathrooms) {
+        this.numberOfBathrooms = numberOfBathrooms;
+    }
+
     @Override
     public String toString() {
         return "House{" +
