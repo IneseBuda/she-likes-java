@@ -20,6 +20,8 @@ public class HouseExample {
         System.out.println("Mary would like to repair her house");
         wife.getHouse().setNumberOfBathrooms(3);//House house = wife.getHouse and then setNumberOfBathrooms(3) together;
         System.out.println("Currently the house look like this:"  + myHouse);
+        System.out.println("Mary:" + wife);
+        System.out.println("Jack:" + husband);
 
         husband.getHouse().setNumberOfBathrooms(1);
         System.out.println("Currently the house looks like this:"  + myHouse);
