@@ -24,7 +24,7 @@ public class WashMachine {
     public int getSerialNumber() {
         return serialNumber;
     }
-
+//class method
     public static int getNumberOfCreatedMachines() {
         return numberOfCreatedMachines;
     }
@@ -32,7 +32,10 @@ public class WashMachine {
     public String getBrand() {
         return brand;
     }
-
+    //instance method to each object
+public void increaseSerialnumber(){
+        serialNumber++;
+}
     public String getModel() {
         return model;
     }

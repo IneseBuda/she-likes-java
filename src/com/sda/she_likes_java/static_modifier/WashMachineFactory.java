@@ -9,10 +9,13 @@ public class WashMachineFactory {
         samsung.setSerialNumber(5);
         System.out.println("Samsung serial number is"+ samsung.getSerialNumber());
         samsung.setNumberOfCreatedMachines(1000);//do not use instance references to access static members(fields/methods)
+        samsung.increaseSerialnumber();
+        samsung.increaseSerialnumber();
+        System.out.println("After method added, new serial number"+ samsung.getSerialNumber());
 
         WashMachine samsung2 = new WashMachine("Samsung", "1x2");
         System.out.println("Current population number is:" + WashMachine.getNumberOfCreatedMachines());
-        System.out.println("Samsung serial number is"+ samsung2.getSerialNumber());
+        System.out.println("Samsung2 serial number is"+ samsung2.getSerialNumber());
 
         for (int i = 0; i < 10; i++) {
             makeSomeWashMachines();
