@@ -5,6 +5,7 @@ public class Book {
     private String author;
     private String title;
     private int yearOfPublication;
+    private int randomNumber;
 
     public Book(String author, String title, int yearOfPublication) {
         this.author = author;
@@ -13,12 +14,24 @@ public class Book {
         numberOfBook++;
     }
 
-    public static void setNumberOfBook(int numberOfBook) {
-        Book.numberOfBook = numberOfBook;
+    public Book(int randomNumber) {
+        this.randomNumber = randomNumber;
+    }
+
+    public int getRandomNumber() {
+        return randomNumber;
+    }
+
+    public void setRandomNumber(int randomNumber) {
+        this.randomNumber = randomNumber;
     }
 
     public static int getNumberOfBook() {
         return numberOfBook;
+    }
+
+    public static void setNumberOfBook(int numberOfBook) {
+        Book.numberOfBook = numberOfBook;
     }
 
     public String getAuthor() {
@@ -53,4 +66,7 @@ public class Book {
                 ", yearOfPublication=" + yearOfPublication +
                 '}';
     }
+
+
+
 }
