@@ -11,9 +11,6 @@ public class Library {
         System.out.println("Current number of books: " + Book.getNumberOfBook());
 
 
-        //System.out.println("Book random number is: " + bookFirst.getRandomNumber());
-
-
         Book bookSecond = new Book("Charlotte Bronte", "Jane Eyre", 1847);
         System.out.println("Second book info: " + bookSecond);
         System.out.println("Current number of book " + Book.getNumberOfBook());
@@ -22,38 +19,41 @@ public class Library {
         System.out.println("Third book info: " + bookThird);
         System.out.println("Current number of book " + Book.getNumberOfBook());
 
+        Random randomBookFirst = new Random();
+       Random randomBookSecond = new Random();
+        Random randomBookThird = new Random();
 
-        for (int i=0; i<10; i--) {
-            randomNumberOfBooks();
+        for (int i=0; i<2;i++) {
+            int randomNumber1 = randomBookFirst.nextInt(10);
+            int randomNumber2 = randomBookSecond.nextInt(10);
+            int randomNumber3 = randomBookThird.nextInt(10);
+
+            System.out.println("Random numbers of bookFirst " + randomNumber1);
+
+            System.out.println("Random numbers of bookSecond " + randomNumber2);
+
+            System.out.println("Random numbers of bookThird " + randomNumber3);
+            System.out.println("Random books number sum:");
+            System.out.println(randomNumber1+randomNumber2+randomNumber3);
+
         }
 
-        Random randomNumber = new Random();
 
-        int bookFirstNumber = randomNumber.nextInt(10);
-        int bookSecondNumber = randomNumber.nextInt(10);
-        int bookThirdNumber = randomNumber.nextInt(10);
-
-        System.out.println("Random numbers of bookFirst " + bookFirstNumber);
-
-        System.out.println("Random numbers of bookSecond " + bookSecondNumber);
-
-
-        System.out.println("Random numbers of bookThird " + bookThirdNumber);
         System.out.println("First created number of book " + Book.getNumberOfBook());
+       // System.out.println("Current number of Random books " + Book.getRandom());
         System.out.println("Here the number of all created books:");
-        System.out.println(Book.getNumberOfBook() + bookFirstNumber + bookSecondNumber + bookThirdNumber);
+        System.out.println(Book.getNumberOfBook()+Book.getRandom() +Book.getRandomNumber1()+Book.getRandomNumber2()+Book.getRandomNumber3());
 
     }
-        private static void randomNumberOfBooks () {
+
         }
-    }
 
 
 
 
 
-            //  makeSomeRandomBooks();
-            //  randomNumberOfBooks();
+
+
 
 
 
