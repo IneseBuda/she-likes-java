@@ -23,39 +23,56 @@ public class Library {
         System.out.println("Current number of book " + Book.getNumberOfBook());
 
 
-        for (int i = 0; i < 10; i++) {
-
-            makeSomeRandomBooks();
+        for (int i=0; i<10; i--) {
             randomNumberOfBooks();
         }
 
-
         Random randomNumber = new Random();
-        int bookFirstNumber = randomNumber.nextInt(5);
-        int bookSecondNumber = randomNumber.nextInt(7);
-        int bookThirdNumber = randomNumber.nextInt(8);
+
+        int bookFirstNumber = randomNumber.nextInt(10);
+        int bookSecondNumber = randomNumber.nextInt(10);
+        int bookThirdNumber = randomNumber.nextInt(10);
+
         System.out.println("Random numbers of bookFirst " + bookFirstNumber);
 
         System.out.println("Random numbers of bookSecond " + bookSecondNumber);
 
 
         System.out.println("Random numbers of bookThird " + bookThirdNumber);
+        System.out.println("First created number of book " + Book.getNumberOfBook());
+        System.out.println("Here the number of all created books:");
+        System.out.println(Book.getNumberOfBook() + bookFirstNumber + bookSecondNumber + bookThirdNumber);
 
-        System.out.println("Current number of book " + Book.getNumberOfBook());
+    }
+        private static void randomNumberOfBooks () {
+        }
     }
 
-    private static void randomNumberOfBooks() {
-    }
-
-    private static void makeSomeRandomBooks() {
 
 
-        new Book("J.K. Rowling", "Harry Potter", 1997).getRandomNumber();
+
+
+            //  makeSomeRandomBooks();
+            //  randomNumberOfBooks();
+
+
+
+
+
+
+        //private static void randomNumberOfBooks () {
+
+
+        //  private static void makeSomeRandomBooks() {
+
+
+        //   new Book("J.K. Rowling", "Harry Potter", 1997);
         //  System.out.println(+bookFirstNumber);
-        new Book("Charlotte Bronte", "Jane Eyre", 1847).getRandomNumber();
+        //  new Book("Charlotte Bronte", "Jane Eyre", 1847);
         //  System.out.println(+bookSecondNumber);
-        new Book("Antoine de Saint-Exupéry", "The Little Prince", 1943).getRandomNumber();
+        // new Book("Antoine de Saint-Exupéry", "The Little Prince", 1943);
         // System.out.println(+bookThirdNumber);
-    }
-}
+
+
+
 
