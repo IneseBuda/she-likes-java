@@ -12,28 +12,30 @@ public class Library {
         System.out.println("Third book info: " + bookThird);
 
         Random numberGenerator = new Random();
-       int makeCopies=numberGenerator.nextInt(30);
-        System.out.println("Random copies" + makeCopies);
-       // bookCopies = makeCopies.nextInt();
+        int makeCopies = numberGenerator.nextInt(5);
+        System.out.println("Random copies " + makeCopies);
 
-        for (int i = 0; i < 5; i++) {
+
+        for (int i = 0; i <= makeCopies; i++) {
             makeBookCopies();
-           // makeCopies = bookCopies.nextInt(30);
-           // bookCopies = makeCopies.nextInt(30);
+
 
         }
 
-        System.out.println("Get book number" + Book.getNumberOfBooks());
+        System.out.println("Get book number " + (Book.getNumberOfBooks() + makeCopies));
     }
 
     private static void makeBookCopies() {
+        new Book("x", "y", 111);
+        new Book("a", "b", 222);
+        new Book("z", "c", 333);
     }
 
 
 }
 
 
-       // Book makeBookCopies = new Book("x", "y", 111);
+
 
 
 
