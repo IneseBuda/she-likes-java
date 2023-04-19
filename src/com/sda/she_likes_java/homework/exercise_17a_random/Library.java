@@ -12,17 +12,17 @@ public class Library {
         System.out.println("Third book info: " + bookThird);
 
         Random numberGenerator = new Random();
-        int makeCopies = numberGenerator.nextInt(5);
-        System.out.println("Random copies " + makeCopies);
+        int makeBookCopies = numberGenerator.nextInt(5);
+        System.out.println("Random copies " + makeBookCopies);
 
 
-        for (int i = 0; i <= makeCopies; i++) {
+        for (int i = 0; i <= makeBookCopies; i++) {
             makeBookCopies();
 
 
         }
 
-        System.out.println("Get book number " + (Book.getNumberOfBooks() + makeCopies));
+        System.out.println("Get book number " + (Book.getNumberOfBooks() + makeBookCopies));
     }
 
     private static void makeBookCopies() {
