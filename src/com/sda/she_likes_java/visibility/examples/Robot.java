@@ -25,9 +25,13 @@ public class Robot {
 
 
     }
+    private void doInternalTwiks(){
+        System.out.println("Very important stuff");
+    }
     public void  moveForward(){
         xPosition++;
         System.out.println("I'm moving forward");
+        doInternalTwiks();
     }
     public void moveBackward(){
         yPosition--;
