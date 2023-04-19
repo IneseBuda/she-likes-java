@@ -10,7 +10,7 @@ public class Main {
         funnyCar.model = "corola";
         //can not see colour from outside its class package;
        // funnyCar.colour = "pink";
-
+        //funnyCar.setBrand("toyota"); Can not set Brand because it is private in another package
     }
 
 }
