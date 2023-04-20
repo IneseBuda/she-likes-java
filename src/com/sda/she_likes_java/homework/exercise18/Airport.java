@@ -21,8 +21,15 @@ public class Airport {
                     airplaneToFaro.thePlaneOnTheAir();
                 }
 
-                int yPlaneLands = airplaneToFaro.getyPlaneLands();
-                if (yPlaneLands == 1) {
+
+                int yPlaneLands;
+                yPlaneLands= airplaneToFaro.getyPlaneLands();
+                int xCoordinates;
+                        xCoordinates=airplaneToFaro.getxCoordinates();
+                int yCoordinates;
+                        yCoordinates= airplaneToFaro.getyCoordinates();
+
+                if (xCoordinates==yCoordinates) {
 
                     airplaneToFaro.thePlaneLands();
 
