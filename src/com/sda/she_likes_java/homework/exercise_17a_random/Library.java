@@ -31,8 +31,17 @@ public class Library {
         new Book("z", "c", 333);
     }
 
+    public static Book[] createCopyOfBook(Book bookToCopy) {
+        Book[] books = new Book[2];
+
+        books[0] = new Book(bookToCopy.getAuthor(), bookToCopy.getTitle(), bookToCopy.getYearOfPublication());
+        books[1] = new Book(bookToCopy.getAuthor(), bookToCopy.getTitle(), bookToCopy.getYearOfPublication());
+        return books;
+    }
+
 
 }
+
 
 
 
