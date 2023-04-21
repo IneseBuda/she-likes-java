@@ -34,64 +34,6 @@ When implementing, remember that:
         this.stayInHangar = stayInHangar;
     }
 
-    public void setFlyTo(String flyTo) {
-        this.flyTo = flyTo;
-    }
-
-    public void setxCoordinates(int xCoordinates) {
-        this.xCoordinates = xCoordinates;
-    }
-
-    public void setyCoordinate(int yCoordinate) {
-        this.yCoordinate = yCoordinate;
-    }
-
-    public void setzFlyTo(int zFlyTo) {
-        this.zFlyTo = zFlyTo;
-    }
-
-    public void setStayInHangar(int stayInHangar) {
-        this.stayInHangar = stayInHangar;
-    }
-
-    public void setTakeOff(int takeOff) {
-        this.takeOff = takeOff;
-        if (takeOff > 9) {
-            System.out.println("Plane to Faro take off!");
-        }
-    }
-
-    public void setLand(int land) {
-        this.land = land;
-    }
-
-    public String getFlyTo() {
-        return flyTo;
-    }
-
-    public int getxCoordinates() {
-        return xCoordinates;
-    }
-
-    public int getyCoordinate() {
-        return yCoordinate;
-    }
-
-    public int getzFlyTo() {
-        return zFlyTo;
-    }
-
-    public int getStayInHangar() {
-        return stayInHangar;
-    }
-
-    public int getTakeOff() {
-        return takeOff;
-    }
-
-    public int getLand() {
-        return land;
-    }
 
     public void takeOff() {
         if (takeOff > 9) {
@@ -102,28 +44,43 @@ When implementing, remember that:
     }
 
 
-
-        public void FlyTo() {
-            if (zFlyTo == xCoordinates + yCoordinate) {
-                System.out.println("Plane on the air and fly to Faro");
-            } else {
-                System.out.println("Plane flies to another destination!");
-            }
+    public void flyTo() {
+        if (zFlyTo == xCoordinates + yCoordinate && takeOff > 9) {
+            System.out.println("Plane on the air and fly to Faro");
+        } else {
+            System.out.println("Plane stay in hangar!");
         }
-
-
-
-        public void land () {
-            if (land > 19) {
-                System.out.println("Plane start to land!");
-
-            } else if (stayInHangar > 4) {
-                System.out.println("Plane stay in hangar!");
-
-            }
-
-        }
-
-
     }
+
+    public void land() {
+        if (land == 20 && takeOff>9) {
+            System.out.println("Plane start to land!");
+        }
+        if (land==20 && takeOff<9){
+    System.out.println("Plane stay in hangar!");
+
+        } else {
+            System.out.println("Plane doesn't allowed to land!");
+
+
+        }
+    }
+
+
+        @Override
+        public String toString () {
+            return "Airplane{" +
+                    "flyTo='" + flyTo + '\'' +
+                    ", xCoordinates=" + xCoordinates +
+                    ", yCoordinate=" + yCoordinate +
+                    ", zFlyTo=" + zFlyTo +
+                    ", stayInHangar=" + stayInHangar +
+                    ", takeOff=" + takeOff +
+                    ", land=" + land +
+                    '}';
+        }
+    }
+
+
+
 
