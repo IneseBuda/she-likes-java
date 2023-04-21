@@ -11,11 +11,11 @@ public class Airport {
 
 
             int xTakeOff = airplaneToFaro.getxTakeOff();
-            if (xTakeOff < 11) {
+            if (xTakeOff < 10) {
                 airplaneToFaro.planeTakeOff();
 
                 int zOnTheAir = airplaneToFaro.getzOntheAir();
-                zOnTheAir = xTakeOff + 1;
+
                 if (zOnTheAir > 10) {
 
                     airplaneToFaro.thePlaneOnTheAir();

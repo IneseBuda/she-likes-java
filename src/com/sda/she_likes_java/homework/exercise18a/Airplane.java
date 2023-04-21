@@ -36,16 +36,19 @@ When implementing, remember that:
 
 
     public void takeOff() {
-        if (takeOff > 9) {
+
+        if (zFlyTo == xCoordinates + yCoordinate && takeOff ==10 && land == 20 && stayInHangar>=10) {
             System.out.println("Plane to Faro take off!");
-        } else if (stayInHangar > 4) {
+        } else if (stayInHangar < 10) {
             System.out.println("Plane stay in hangar!");
+
         }
+
     }
 
 
     public void flyTo() {
-        if (zFlyTo == xCoordinates + yCoordinate && takeOff > 9) {
+        if (zFlyTo == xCoordinates + yCoordinate && takeOff ==10 && land == 20 && stayInHangar >=10) {
             System.out.println("Plane on the air and fly to Faro");
         } else {
             System.out.println("Plane stay in hangar!");
@@ -53,14 +56,13 @@ When implementing, remember that:
     }
 
     public void land() {
-        if (land == 20 && takeOff>9) {
+        if (land == 20 && takeOff==10 && zFlyTo == xCoordinates + yCoordinate&& stayInHangar >=10) {
             System.out.println("Plane start to land!");
-        }
-        if (land==20 && takeOff<9){
-    System.out.println("Plane stay in hangar!");
 
-        } else {
-            System.out.println("Plane doesn't allowed to land!");
+
+
+    } else {
+        System.out.println("Plane stay in hangar!");
 
 
         }
