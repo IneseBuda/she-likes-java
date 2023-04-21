@@ -14,7 +14,7 @@ When implementing, remember that:
 - check the use of your class in the main method
 - have fun
  */
- class Airplane {
+class Airplane {
     private String flyTo;
     private int xCoordinates;
     private int yCoordinate;
@@ -37,9 +37,9 @@ When implementing, remember that:
 
     public void takeOff() {
 
-        if (zFlyTo == xCoordinates + yCoordinate && takeOff ==10 && land == 20 && stayInHangar>=10) {
+        if (zFlyTo == xCoordinates + yCoordinate && takeOff == 10 && land == 20 && stayInHangar >= 10) {
             System.out.println("Plane to Faro take off!");
-        } else if (stayInHangar < 10) {
+        } else {
             System.out.println("Plane stay in hangar!");
 
         }
@@ -48,7 +48,7 @@ When implementing, remember that:
 
 
     public void flyTo() {
-        if (zFlyTo == xCoordinates + yCoordinate && takeOff ==10 && land == 20 && stayInHangar >=10) {
+        if (zFlyTo == xCoordinates + yCoordinate && takeOff == 10 && land == 20 && stayInHangar >= 10) {
             System.out.println("Plane on the air and fly to Faro");
         } else {
             System.out.println("Plane stay in hangar!");
@@ -56,32 +56,31 @@ When implementing, remember that:
     }
 
     public void land() {
-        if (land == 20 && takeOff==10 && zFlyTo == xCoordinates + yCoordinate&& stayInHangar >=10) {
+        if (land == 20 && takeOff == 10 && zFlyTo == xCoordinates + yCoordinate && stayInHangar >= 10) {
             System.out.println("Plane start to land!");
 
 
-
-    } else {
-        System.out.println("Plane stay in hangar!");
+        } else {
+            System.out.println("Plane stay in hangar!");
 
 
         }
     }
 
 
-        @Override
-        public String toString () {
-            return "Airplane{" +
-                    "flyTo='" + flyTo + '\'' +
-                    ", xCoordinates=" + xCoordinates +
-                    ", yCoordinate=" + yCoordinate +
-                    ", zFlyTo=" + zFlyTo +
-                    ", stayInHangar=" + stayInHangar +
-                    ", takeOff=" + takeOff +
-                    ", land=" + land +
-                    '}';
-        }
+    @Override
+    public String toString() {
+        return "Airplane{" +
+                "flyTo='" + flyTo + '\'' +
+                ", xCoordinates=" + xCoordinates +
+                ", yCoordinate=" + yCoordinate +
+                ", zFlyTo=" + zFlyTo +
+                ", stayInHangar=" + stayInHangar +
+                ", takeOff=" + takeOff +
+                ", land=" + land +
+                '}';
     }
+}
 
 
 
