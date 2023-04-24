@@ -6,4 +6,8 @@ public class Plane extends Vehicle{
         super.move();
         System.out.println("The plane flies in the air");
     }
+    @Override
+    public void stay(){
+        System.out.println("The plane is staying in hangar");
+    }
 }

@@ -26,6 +26,6 @@ public class Main {
     }
 
     private static void callVehicle(Vehicle someVehicle) {
-        someVehicle.move();
+        someVehicle.move(); someVehicle.stay();
     }
 }
