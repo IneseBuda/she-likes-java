@@ -27,8 +27,11 @@ public class Main {
         carUtils.safeCast(anotherToyota);
         carUtils.safeCast(ferrari);
 
-        BMW car = new BMW();
-        CarUtils.safeCast(car);
+        BMW bmw = new BMW();//if we call direct than we can get method from bmw direct
+        bmw.speedUp();
+
+        Car bwm = new BMW();//samainīju bmw burtus, lai strādātu
+        CarUtils.safeCast(bwm);
         System.out.println("\n");
 
         carUtils.differentType(ferrari);

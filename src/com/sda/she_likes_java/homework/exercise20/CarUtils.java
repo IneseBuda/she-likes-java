@@ -21,6 +21,8 @@ public class CarUtils {
         }
         if (maybeMazdaOrToyota instanceof Ferrari) {
             System.out.println("Ferrari is not Mazda and not Toyota as well! ");
+        }else{
+            System.out.println("Different type");
         }
 
     }

@@ -6,4 +6,7 @@ public class BMW extends Car{
     public void carDrive() {
         System.out.println("RRRRRR");
     }
+    public void speedUp(){
+        System.out.println("Speed");
+    }
 }
