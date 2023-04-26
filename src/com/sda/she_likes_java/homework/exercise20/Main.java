@@ -23,6 +23,7 @@ public class Main {
         CarUtils carUtils = new CarUtils();
         carUtils.safeCast(anotherMazda);
         carUtils.safeCast(anotherToyota);
+        carUtils.safeCast(ferrari);
 
     }
 }
