@@ -13,5 +13,31 @@ public class Main {
 
         Flyable superman = new Superman();
         Flyable flyableParrot = new Parrot();
+
+      //  Swimable tiger2 = tiger; can not because Animal do not swim
+        //we can write:
+        Swimable tiger2 =(Swimable)tiger;//or
+        Swimable swimableTiger = new Tiger();
+        Swimable swimableSuperman = (Swimable) superman;
+
+        Superman superSuperMan = new Superman();
+        superSuperMan.fly();
+        superSuperMan.swim();
+        Flyable superFly = superSuperMan;
+        superFly.fly();
+        Swimable superSwim = superSuperMan;
+        superSwim.swim();
+
+
+        //Tiger assignment
+        Tiger newTiger = new Tiger();
+        newTiger.go();
+        newTiger.swim();
+        Animal animalTiger = new Tiger();
+        animalTiger.go();
+        Swimable swimableTiger2 = new Tiger();
+        swimableTiger2.swim();
+        Object objectTiger = new Tiger();//  can not call go or swim - they are not visibly here
+
     }
 }
