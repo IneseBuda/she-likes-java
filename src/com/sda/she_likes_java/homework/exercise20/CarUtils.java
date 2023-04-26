@@ -7,7 +7,7 @@ public class CarUtils {
     //      car.carDrive();
     // }
     // }
-    public void safeCast(Car maybeMazdaOrToyota) {
+    public static void safeCast(Car maybeMazdaOrToyota) {
         if (maybeMazdaOrToyota instanceof Mazda) {
             System.out.println("It is Mazda");
             ((Mazda) maybeMazdaOrToyota).drivesNotSoFast();

@@ -26,6 +26,9 @@ public class Main {
         carUtils.safeCast(anotherMazda);
         carUtils.safeCast(anotherToyota);
         carUtils.safeCast(ferrari);
+
+        BMW car = new BMW();
+        CarUtils.safeCast(car);
         System.out.println("\n");
 
         carUtils.differentType(ferrari);
