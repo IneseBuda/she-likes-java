@@ -24,6 +24,9 @@ public class Main {
         carUtils.safeCast(anotherMazda);
         carUtils.safeCast(anotherToyota);
         carUtils.safeCast(ferrari);
+        System.out.println("\n");
+
+        carUtils.differentType(ferrari);
 
     }
 }

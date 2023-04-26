@@ -2,7 +2,7 @@ package com.sda.she_likes_java.homework.exercise20;
 
 public class CarUtils {
 
-    // public void whatCarItis(Car car){
+    // public void whatCarItIs(Car car){
     //   if(car != null){
     //      car.carDrive();
     // }
@@ -25,5 +25,8 @@ public class CarUtils {
 
     }
 
+public void differentType (Car ferrari){
+    System.out.println("It is ferrari");
+}
 
 }
