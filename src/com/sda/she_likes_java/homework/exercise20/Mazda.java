@@ -9,7 +9,7 @@ public class Mazda extends Car{
     public void drivesNotSoFast(){
         System.out.println("Mazda is not so fast as Ferrari");
     }
-    public void looksNotSoEzpensive(){
+    public void looksNotSoExpensive(){
         System.out.println("Mazda looks not so expensive as Ferrari");
     }
 }
