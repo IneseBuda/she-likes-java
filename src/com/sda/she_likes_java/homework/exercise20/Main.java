@@ -6,7 +6,7 @@ public class Main {
         ferrari.driveFast();
         ferrari.looksExpensive();
         System.out.println("\n");
-        System.out.println("Safe cast for Mazda and Toyota specific methods");
+
 
         Car anotherMazda = new Mazda();
         Mazda castedFromCars = (Mazda) anotherMazda;
@@ -18,8 +18,10 @@ public class Main {
         Toyota castedAlsoFromCars = (Toyota) anotherToyota;
         castedAlsoFromCars.drivesSlowly();
         castedAlsoFromCars.looksCheep();
-
         System.out.println("\n");
+
+        System.out.println("Safe cast for Mazda and Toyota specific methods");
+
         CarUtils carUtils = new CarUtils();
         carUtils.safeCast(anotherMazda);
         carUtils.safeCast(anotherToyota);

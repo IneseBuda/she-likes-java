@@ -26,7 +26,8 @@ public class CarUtils {
     }
 
 public void differentType (Car ferrari){
-    System.out.println("It is ferrari");
+
+        System.out.println("It is ferrari");
 }
 
 }
