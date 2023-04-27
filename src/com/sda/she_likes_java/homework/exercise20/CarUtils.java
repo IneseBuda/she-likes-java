@@ -19,11 +19,10 @@ public class CarUtils {
             ((Toyota) maybeMazdaOrToyota).drivesSlowly();
             ((Toyota) maybeMazdaOrToyota).looksCheep();
         }
-        if (maybeMazdaOrToyota instanceof Ferrari) {
-            System.out.println("Ferrari is not Mazda and not Toyota as well! ");
-        }else{
-            System.out.println("Different type");
-        }
+       if (maybeMazdaOrToyota instanceof BMW){
+           System.out.println("Bmw is super");
+           ((BMW)  maybeMazdaOrToyota).speedUp();
+       }
 
     }
 
