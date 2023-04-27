@@ -20,19 +20,21 @@ public class Airplane {
 
     private int xTakeOff;
     private int yPlaneLands;
-    private Boolean zFlyTo;
+    private int zFlyTo;
     private int aInHangar;
+    private int xCoordinates;
+    private int yCoordinates;
 
 
-
-    public Airplane(String flyToFaro,  int xTakeOff, int yPlaneLands,  int aInHnagar) {
+    public Airplane(String flyToFaro, int xTakeOff, int yPlaneLands, int aInHnagar, int xCoordinates, int yCoordinates) {
         this.flyToFaro = flyToFaro;
 
         this.xTakeOff = xTakeOff;
         this.yPlaneLands = yPlaneLands;
 
         this.aInHangar = aInHnagar;
-
+        this.xCoordinates = xCoordinates;
+        this.yCoordinates = yCoordinates;
     }
 
     public void setFlyToFaro(String flyToFaro) {
@@ -41,15 +43,15 @@ public class Airplane {
 
     public void setxTakeOff(int xTakeOff) {
         this.xTakeOff = xTakeOff;
-        if(xTakeOff==10){
+        if (xTakeOff == 10) {
             System.out.println("Plane to Faro take off!");
         }
     }
 
-    public void setzFlyTo(Boolean zFlyTo) {
-        this.zFlyTo = zFlyTo;
-        zFlyTo(12,8);
-        if (zFlyTo=true) {
+    public void setzFlyTo(int xCoordinates,int yCoordinates) {
+        this.zFlyTo = xCoordinates&yCoordinates;
+
+        if (xCoordinates == 12 && yCoordinates == 8) {
 
             System.out.println("Plane on the air and fly to Faro");
         }
@@ -57,42 +59,45 @@ public class Airplane {
 
     public void setyPlaneLands(int yPlaneLands) {
         this.yPlaneLands = yPlaneLands;
-        if (yPlaneLands==20){
+        if (yPlaneLands == 20) {
             System.out.println("Plane start to land!");
         }
     }
 
 
-
     public void setaInHagar(int aInHagar) {
         this.aInHangar = aInHangar;
-        if(aInHagar==9){
+        if (aInHagar == 9) {
             System.out.println("Plane stay in the hangar");
         }
     }
 
+    public void setxCoordinates(int xCoordinates) {
+        this.xCoordinates = xCoordinates;
+        if (xCoordinates == 12) {
+        }
+    }
 
+    public void setyCoordinates(int yCoordinates) {
+        this.yCoordinates = yCoordinates;
+        if (yCoordinates == 8) {
 
-
+        }
+    }
 
     public void planeTakeOff() {
 
+    }
 
+    public void inHangar() {
 
     }
 
-public void inHangar(){
-
-}
-    public void zFlyTo(int xCoordinates, int yCoordinates) {
-        this.zFlyTo = zFlyTo;
-        if (zFlyTo=true){
-            System.out.println("Plane on the air and fly to Faro");
-        }
+    public void zFlyTo() {
 
     }
 
-    public void thePlaneLands(){
+    public void thePlaneLands() {
 
     }
 
