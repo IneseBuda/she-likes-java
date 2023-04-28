@@ -3,7 +3,7 @@ package com.sda.she_likes_java.common_behaviour;
 public class Main {
     public static void main(String[] args) {
         Bird bird = new Bird();
-      //  bird.fly();
+      // bird.fly();
 
         Animal tiger = new Tiger();
         tiger.go();
