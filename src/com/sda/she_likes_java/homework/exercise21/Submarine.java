@@ -5,4 +5,11 @@ public class Submarine extends Vehicle implements Diving{
     public void diving() {
         System.out.println("Submarine is diving");
     }
+
+    @Override
+    public void move() {
+        System.out.println("Move() from Submarine");
+    }
+
+
 }

@@ -16,5 +16,9 @@ ship.floating();
 Submarine submarine = new Submarine();
 submarine.move();
 submarine.diving();
+
+Casting.safeCasting(new Airplane());
+Casting.safeCasting(new Ship());
+Casting.safeCasting(new Submarine());
     }
 }
