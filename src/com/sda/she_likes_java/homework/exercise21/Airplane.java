@@ -4,7 +4,7 @@ public class Airplane extends Vehicle implements Flying{
 
     @Override
     public void move() {
-        System.out.println("move() from airplane");
+        System.out.println("Airplane is moving very fast");
     }
 
     @Override
