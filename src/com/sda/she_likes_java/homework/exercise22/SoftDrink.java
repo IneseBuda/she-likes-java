@@ -1,10 +1,10 @@
 package com.sda.she_likes_java.homework.exercise22;
 
-public class CocaCola {
+public class SoftDrink {
     private String name;
     private double price;
 
-    public CocaCola(String name, double price) {
+    public SoftDrink(String name, double price) {
         this.name = name;
         this.price = price;
     }
