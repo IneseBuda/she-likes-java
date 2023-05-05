@@ -15,6 +15,7 @@ public class Main {
 
         System.out.println("Total for chosen items: ");
         System.out.println((items.get(0).getPrice()+items.get(1).getPrice()+items.get(2).getPrice()));
+
         List<Item> moreItems = new ArrayList<>();
         moreItems.add(new Item("Laima", 3.50));
         moreItems.add(new Item("Milk", 1.0));

@@ -4,6 +4,7 @@ public class Chocolate {
     private String name;
     private double price;
 
+
     public String getName() {
         return name;
     }
