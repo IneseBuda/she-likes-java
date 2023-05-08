@@ -19,9 +19,12 @@ public class ShoppingCart {
 
     public double calculateTotalBasketValue() {
         double sum = 0;
-        for (int i = 0; i < items.size(); i++) {
-            sum += items.get(i).getPriceInUSD()*1.21;
+        for (Item item : items) {
+            sum += item.getPriceInUSD() * 1.21;
         }
+       // for (int i = 0; i < items.size(); i++) {
+       //     sum += items.get(i).getPriceInUSD()*1.21;
+      //  }
 
         return sum;
     }
