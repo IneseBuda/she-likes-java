@@ -2,17 +2,11 @@ package com.sda.she_likes_java.homework.exercise23;
 
 import java.util.Objects;
 
-public class Subject {
-    private String name;
+public class Grade {
     private int grade;
 
-    public Subject(String name, int i) {
-        this.name = name;
+    public Grade(int grade) {
         this.grade = grade;
-    }
-
-    public String getName() {
-        return name;
     }
 
     public int getGrade() {
@@ -23,20 +17,19 @@ public class Subject {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Subject subject = (Subject) o;
-        return grade == subject.grade && Objects.equals(name, subject.name);
+        Grade grade1 = (Grade) o;
+        return grade == grade1.grade;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, grade);
+        return Objects.hash(grade);
     }
 
     @Override
     public String toString() {
-        return "Subject{" +
-                "name='" + name + '\'' +
-                ", grade=" + grade +
+        return "Grade{" +
+                "grade=" + grade +
                 '}';
     }
 }
