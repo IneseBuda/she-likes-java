@@ -17,19 +17,27 @@ What structures will you use to store the data: list, map, set.
      */
 
     private List<Pupil> pupils;
-    public LessonJournal(){this.pupils = new ArrayList<>();}
+    public LessonJournal(){this.pupils = new ArrayList<>();
+        this.subjects = new ArrayList<>();}
 
     public void displayPupilList(){
         System.out.println("Here are pupils list" + pupils);
     }
 
     private List<Subject> subjects;
-    public void LessonJournalSubject(){this.subjects = new ArrayList<>();}
+   // public LessonJournalSubject(){this.subjects = new ArrayList<>();}
 
     public void displaySubjectsList(){
         System.out.println("Here are subjects list" + subjects);
     }
     public static void pupilGradeInSubject(Map<String,Subject>subjectMap){
         System.out.println("Here is pupil grade in subject");
+    }
+
+    public void addPupiltoList(Pupil pupilList) {
+        pupils.add(pupilList);
+    }
+    public void addSubjectList(Subject subjectList){
+        subjects.add(subjectList);
     }
 }

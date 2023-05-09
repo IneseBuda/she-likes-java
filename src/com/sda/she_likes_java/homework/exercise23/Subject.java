@@ -4,19 +4,13 @@ import java.util.Objects;
 
 public class Subject {
     private String name;
-    private int grade;
 
-    public Subject(String name, int grade) {
+    public Subject(String name) {
         this.name = name;
-        this.grade = grade;
     }
 
     public String getName() {
         return name;
-    }
-
-    public int getGrade() {
-        return grade;
     }
 
     @Override
@@ -24,19 +18,18 @@ public class Subject {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Subject subject = (Subject) o;
-        return grade == subject.grade && Objects.equals(name, subject.name);
+        return Objects.equals(name, subject.name);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, grade);
+        return Objects.hash(name);
     }
 
     @Override
     public String toString() {
         return "Subject{" +
                 "name='" + name + '\'' +
-                ", grade=" + grade +
                 '}';
     }
 }
