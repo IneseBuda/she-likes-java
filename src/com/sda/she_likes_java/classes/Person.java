@@ -5,4 +5,13 @@ public class Person {
     String surname;
     int age;
     String address;
+
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public Object getName() {
+        return name;
+    }
 }
