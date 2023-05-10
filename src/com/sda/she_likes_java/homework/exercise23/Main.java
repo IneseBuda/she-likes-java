@@ -16,8 +16,8 @@ public class Main {
 
         pupilList.displayPupilList();
         LessonJournal subjectsList = new LessonJournal();
-        Subject subject1 = new Subject("Math", 8);
-        Subject subject2 = new Subject("Art", 8);
+        Subject subject1 = new Subject("Math");
+        Subject subject2 = new Subject("Art");
 
         subjectsList.addSubjectList(subject1);
         subjectsList.addSubjectList(subject2);

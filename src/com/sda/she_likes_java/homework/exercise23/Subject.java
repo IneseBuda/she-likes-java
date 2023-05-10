@@ -6,9 +6,8 @@ public class Subject {
     private String name;
 
 
-    public Subject(String name, int i) {
+    public Subject(String name) {
         this.name = name;
-
     }
 
     public String getName() {
