@@ -25,13 +25,20 @@ public class Main {
         subjectsList.displaySubjectsList();
 
 
+        Map<Pupil, Grade> gradesInSubjectArt = new HashMap<>();
+        gradesInSubjectArt.put(new Pupil("Ilze", " Bule"), new Grade(9));
+        gradesInSubjectArt.put(new Pupil("Anna", " Zirne"), new Grade(7));
+       // System.out.println("Here are pupils grade in art" + gradesInSubjectArt);
+        System.out.println("Grades in Art: ");
+        pupilGradeInSubject(gradesInSubjectArt);
 
-        Map<Pupil,Subject> pupilGradeInSubject = new HashMap<>();
-        pupilGradeInSubject.put(new Pupil("Ilze","Bule"), new Subject("Math",8));
-        pupilGradeInSubject.put(new Pupil("Anna","Zirne"),new Subject("Math", 9));
-        pupilGradeInSubject.put(new Pupil("Ilze","Bule"), new Subject("Art",10));
-        pupilGradeInSubject.put(new Pupil("Anna","Zirne"),new Subject("Art", 7));
-       System.out.println("grades" + pupilGradeInSubject.get("Ilze"));
 
+        Map<Pupil, Grade> gradesInSubjectMath = new HashMap<>();
+        gradesInSubjectMath.put(new Pupil("Ilze", " Bule"), new Grade(10));
+        gradesInSubjectMath.put(new Pupil("Anna", " Zirne"), new Grade(6));
+       // System.out.println("Here are pupils grade in art" + gradesInSubjectMath);
+        System.out.println("Grades in Math: ");
+        pupilGradeInSubject(gradesInSubjectMath);
     }
 }
+
