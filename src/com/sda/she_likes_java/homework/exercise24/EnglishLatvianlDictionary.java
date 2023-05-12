@@ -14,19 +14,20 @@ Create a class Main and check the functionality of your class.
  */
 public class EnglishLatvianlDictionary {
 
-   public static List<EnglishWords> translateTheWordToLV(List<EnglishWords> englishWords, String translateWord){
-      List<EnglishWords> result = new ArrayList<>();
+    public static List<EnglishWords> translateTheWordToLV(List<EnglishWords> englishWords, String translateWord) {
+        List<EnglishWords> result = new ArrayList<>();
 
-      for (EnglishWords englishWord : englishWords) {
-         if (englishWord.getEnglishWord().equals(translateWord)){
-result.add(englishWord);
-         }else {
-            System.out.println("Sorry, we can not find the word");
-         }
-      }
-      return result;
-   }
+        for (EnglishWords englishWord : englishWords) {
+            if (englishWord.getEnglishWord().equals(translateWord)) {
+                result.add(englishWord);
 
+           // } else {
+             //   System.out.println("Sorry, we can not find the word");
+            }
+        }return result;
 
-
+    }
 }
+
+
+

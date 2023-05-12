@@ -16,6 +16,8 @@ public class Main {
 
             List<EnglishWords>translateWord=translateTheWordToLV(englishWords,"Dog");
         System.out.println("Translation of word: "+ translateWord);
+        translateWord = translateTheWordToLV(englishWords, "Sky");
+        System.out.println("We have not such word in dictionary: "+ translateWord);
         }
     }
 
