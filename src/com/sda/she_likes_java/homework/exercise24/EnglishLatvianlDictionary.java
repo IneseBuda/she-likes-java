@@ -21,13 +21,29 @@ public class EnglishLatvianlDictionary {
             if (englishWord.getEnglishWord().equals(translateWord)) {
                 result.add(englishWord);
 
-           // } else {
-             //   System.out.println("Sorry, we can not find the word");
+                } else {
+                  System.out.println("Sorry, we can not find the word");
             }
         }return result;
 
+
+    }
+
+    public static List<EnglishWords> translateClientWord(List<EnglishWords> englishWords, String clientEnglishWord) {
+        List<EnglishWords> result = new ArrayList<>();
+
+        for (EnglishWords englishWord : englishWords) {
+            if (englishWord.getEnglishWord().equals(clientEnglishWord)) {
+                result.add(englishWord);
+            } else {
+                System.out.println("Sorry, we can not find the word");
+            }
+
+
+        }return result;
     }
 }
+
 
 
 
