@@ -23,6 +23,7 @@ public class EnglishPolishDictionary {
         String polishTranslation = dictionary.get(englishWord);
         if (polishTranslation != null) {
             System.out.printf("English word: [%s] means [%s] in Polish%n", englishWord, polishTranslation);
+            System.out.println("English word: [%s] means [%s] in Polish".formatted(englishWord, polishTranslation));
         } else {
             System.out.printf("Don't know how to translate [%s] into Polish%n", englishWord);
         }
