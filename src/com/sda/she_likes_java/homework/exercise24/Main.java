@@ -13,10 +13,11 @@ public class Main {
         List<EnglishWords> englishWords = List.of(
                 new EnglishWords("Dog", "Suns"),
                 new EnglishWords("Cat", "Kaķis"),
-                new EnglishWords("MIlk", "Piens")
+                new EnglishWords("Milk", "Piens"),
+                new EnglishWords("Rose", "Roze")
         );
 
-        List<EnglishWords> translateWord = translateTheWordToLV(englishWords, "Dog");
+        List<EnglishWords> translateWord = translateTheWordToLV(englishWords, "Cat");
         System.out.println("Translation of word: " + translateWord);
        translateWord = translateTheWordToLV(englishWords, "Sky");
         System.out.println("We have not such word in dictionary: " + translateWord);
