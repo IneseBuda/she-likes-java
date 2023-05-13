@@ -1,5 +1,7 @@
 package com.sda.she_likes_java.homework.exercise23a;
 
+import java.util.Objects;
+
 public class Subject {
     private final String subjectName;
 
