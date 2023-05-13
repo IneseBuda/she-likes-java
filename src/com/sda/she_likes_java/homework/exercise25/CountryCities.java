@@ -1,16 +1,14 @@
 package com.sda.she_likes_java.homework.exercise25;
 
 
-import com.sda.she_likes_java.collections.list.WordsBilingual;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class CountryCities {
-    private List<City>listOfCities;
-    public CountryCities(){listOfCities = new ArrayList<>();}
+    private List<City>country;
+    public CountryCities(){country = new ArrayList<>();}
     public void fillWithCities(List<City>cityList){
-       listOfCities.addAll(cityList);
+      country.addAll(cityList);
 
 
     //public static String giveCitiesOfGivenCountry(){
@@ -19,11 +17,11 @@ public class CountryCities {
 //if (country!=null){
     //System.out.println("Latvia cities are:" + List.of());
 }
-public void printCitiesOfCountry(String country){
-        for(MyCountriesWithCities askedCountry: listOfCities){
+public void printCitiesOfCountry(){
+        for(City askedCountry: country){
             if(askedCountry.getName().equals(country)){
-                String print = askedCountry.getList.of();
-                System.out.println("Here are the list:"+ print, country);
+
+                System.out.println(List.of());
             }
         }
 

@@ -9,11 +9,16 @@ public class Main {
 
         Scanner inputReader = new Scanner(System.in);
         String userChoice = inputReader.next();
-        CountryCities currentCountry;
-        if (userChoice.equals("1")){
+        Country currentCountry = new Country("Latvia");
+        if (userChoice.equals("Latvia")){
             currentCountry = MyCountriesWithCities.createLatviaCities();
-            System.out.println("Here are Latvia cities" );
+            CountryCities latviaCities = new CountryCities();
+            //latvia.fillWithCities(list);
+          //  latviaCities.fillWithCities(list);
+           // System.out.println(List.of(CountryCities) );
         }
 
+
     }
+
 }

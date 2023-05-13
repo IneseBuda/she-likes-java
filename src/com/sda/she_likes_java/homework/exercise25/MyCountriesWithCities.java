@@ -4,15 +4,15 @@ import java.util.List;
 
 public class MyCountriesWithCities {
 
-    public static CountryCities createLatviaCities() {
+    public static Country createLatviaCities() {
         List<City> list = List.of(
                 new City("Riga"),
                 new City("Liepaja"),
                 new City("Jurmala")
         );
-       CountryCities latviaCities = new CountryCities();
-latviaCities.fillWithCities(list);
-     return latviaCities;
+       Country latvia= new Country("Latvia");
+latvia.fillWithCities(list);
+     return latvia;
 
     }
 }

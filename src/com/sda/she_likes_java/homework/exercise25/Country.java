@@ -1,5 +1,6 @@
 package com.sda.she_likes_java.homework.exercise25;
 
+import java.util.List;
 import java.util.Objects;
 
 /*
@@ -46,4 +47,6 @@ public class Country {
     }
 
 
+    public void fillWithCities(List<City> list) {
+    }
 }
