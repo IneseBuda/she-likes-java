@@ -5,11 +5,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CountryCities {
-    private List<City>country;
-    public CountryCities(){country = new ArrayList<>();}
-    public void fillWithCities(List<City>cityList){
-      country.addAll(cityList);
-
+    private static List<City>Country;
+    public CountryCities(){Country = new ArrayList<>();}
+    public static void fillWithCities(List<City> cityList){
+      cityList.addAll(cityList);
 
     //public static String giveCitiesOfGivenCountry(){
        // Map<Country,List<City>> CitiesOfCountry =new HashMap<>();
@@ -18,8 +17,8 @@ public class CountryCities {
     //System.out.println("Latvia cities are:" + List.of());
 }
 public void printCitiesOfCountry(){
-        for(City askedCountry: country){
-            if(askedCountry.getName().equals(country)){
+        for(City askedCountry:Country){
+            if(askedCountry.getName().equals(Country)){
 
                 System.out.println(List.of());
             }
