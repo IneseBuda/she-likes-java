@@ -1,22 +1,16 @@
 package com.sda.she_likes_java.homework.exercise25a;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Map;
 
 public class CitiesCountries {
 
-    private List<Country>countries;
+public static void citiesInCountries(Map<City, Country>cityCountryMap){
+   for( Map.Entry<City, Country> item: cityCountryMap.entrySet()){
+        System.out.println("Key: "+ item.getKey());
+        System.out.println("Value: "+ item.getValue());
 
-    public CitiesCountries() {
-        this.countries = new ArrayList<>();
     }
-
-    public void addCountriesList(Country countriesList){
-        countries.add(countriesList);
-    }
-    public void displayCountriesList(){
-        System.out.println("Here countries list" + countries);
-    }
-
+}
 
 }
+

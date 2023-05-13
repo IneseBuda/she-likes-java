@@ -18,7 +18,7 @@ public class City {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         City city = (City) o;
-        return Objects.equals(name, city.name);
+        return Objects.equals(name, city.getName());
     }
 
     @Override
