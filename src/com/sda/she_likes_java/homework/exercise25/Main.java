@@ -15,6 +15,7 @@ public class Main {
         countriesList.addCountryToList(country2);
 
         countriesList.displayCountriesList();
+
         CountryCities citiesOfLithuania = new CountryCities();
         CitiesOfLithuania cities1 = new CitiesOfLithuania("Vilnius");
         CitiesOfLithuania cities2 = new CitiesOfLithuania("Palanga");
@@ -26,7 +27,16 @@ public class Main {
         CountryCities.addall(citiesOfLithuania);
         System.out.println("Here are cities of Lithuania" + citiesOfLithuania);
 
+        CountryCities citiesOfLatvia = new CountryCities();
+        CitiesOfLatvia cities3 = new CitiesOfLatvia("Riga");
+        CitiesOfLatvia cities4 = new CitiesOfLatvia("Liepaja");
+        citiesOfLatvia.addCitiesOfLatvia(cities3);
+        citiesOfLatvia.addCitiesOfLatvia(cities4);
+        citiesOfLatvia.displayCitiesOfLatvia();
 
+        CountryCities Country2 = citiesOfLatvia;
+        CountryCities.addall(citiesOfLatvia);
+        System.out.println("Here are cities of Latvia" + citiesOfLatvia);
 
 
     }

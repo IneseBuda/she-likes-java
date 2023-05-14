@@ -12,6 +12,7 @@ public class CountryCities {
    public CountryCities(){this.countries=new ArrayList<>();
       this.countries = new ArrayList<>();
       this.citiesOfLithuanias = new ArrayList<>();
+      this.citiesOfLatvias = new ArrayList<>();
    }
 
    @Override
@@ -41,7 +42,14 @@ public class CountryCities {
       System.out.println("Here are cities of Lithuania" + citiesOfLithuanias);
    }
 
+   private List<CitiesOfLatvia> citiesOfLatvias;
 
+   public void addCitiesOfLatvia(CitiesOfLatvia citiesOfLatvia){
+      citiesOfLatvias.add(citiesOfLatvia);
+   }
+   public void displayCitiesOfLatvia(){
+      System.out.println("Here are cities of Latvia" + citiesOfLatvias);
+   }
 
 
 }
