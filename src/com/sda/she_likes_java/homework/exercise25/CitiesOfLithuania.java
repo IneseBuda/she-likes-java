@@ -1,12 +1,13 @@
 package com.sda.she_likes_java.homework.exercise25;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class City {
-   private String name;
+public class CitiesOfLithuania {
+    private String name;
 
-    public City(String name) {
+    public CitiesOfLithuania(String name) {
         this.name = name;
     }
 
@@ -18,8 +19,8 @@ public class City {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        City city = (City) o;
-        return Objects.equals(name, city.name);
+        CitiesOfLithuania that = (CitiesOfLithuania) o;
+        return Objects.equals(name, that.name);
     }
 
     @Override
@@ -29,7 +30,7 @@ public class City {
 
     @Override
     public String toString() {
-        return "City{" +
+        return "CitiesOfLithuania{" +
                 "name='" + name + '\'' +
                 '}';
     }
