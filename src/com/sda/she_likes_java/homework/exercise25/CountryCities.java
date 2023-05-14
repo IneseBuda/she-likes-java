@@ -3,6 +3,7 @@ package com.sda.she_likes_java.homework.exercise25;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Consumer;
 
 public class CountryCities {
 
@@ -39,6 +40,8 @@ public class CountryCities {
    public void displayCitiesOfLithuania(){
       System.out.println("Here are cities of Lithuania" + citiesOfLithuanias);
    }
+
+
 
 
 }

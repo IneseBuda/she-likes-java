@@ -1,6 +1,9 @@
 package com.sda.she_likes_java.homework.exercise25;
 
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -20,8 +23,12 @@ public class Main {
         citiesOfLithuania.displayCitiesOfLithuania();
 
         CountryCities Country1 = citiesOfLithuania;
-        Country1.addall(citiesOfLithuania);
+        CountryCities.addall(citiesOfLithuania);
         System.out.println("Here are cities of Lithuania" + citiesOfLithuania);
+
+
+
+
     }
 
 
