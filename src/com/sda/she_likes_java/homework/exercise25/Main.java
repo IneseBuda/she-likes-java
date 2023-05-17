@@ -35,7 +35,7 @@ public class Main {
         citiesOfLatvia.displayCitiesOfLatvia();
 
         CountryCities Country2 = citiesOfLatvia;
-        CountryCities.addall(citiesOfLatvia);
+        Country2.addall(citiesOfLatvia);
         System.out.println("Here are cities of Latvia" + citiesOfLatvia);
 
 

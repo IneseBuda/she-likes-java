@@ -17,12 +17,25 @@ public class Main {
 
         countriesList.displayCountriesList();
 
-        Map<City, Country>citiesInCountries = new HashMap<>();
-        citiesInCountries.put(new City("Riga"), new Country("Latvia"));
-        citiesInCountries.put(new City("Liepaja"),new Country("Latvia"));
-        citiesInCountries.put(new City("Vilnius"), new Country("Lithuania"));
-        System.out.println("City of given Country: ");
-        citiesInCountries(citiesInCountries);
-        System.out.println("Country for Riga: " + citiesInCountries.get(new City("Riga")));
+        Map<City, Country>citiesInCountriesOfLatvia = new HashMap<>();
+        citiesInCountriesOfLatvia.put(new City("Riga"), new Country("Latvia"));
+        citiesInCountriesOfLatvia.put(new City("Liepaja"),new Country("Latvia"));
+        System.out.println("Cities of given Country: ");
+        citiesInCountries(citiesInCountriesOfLatvia);
+        for (City i:citiesInCountriesOfLatvia.keySet()
+             ) {
+            System.out.println(i);
+        }
+
+        Map<City, Country>citiesInCountriesOfLithuania = new HashMap<>();
+        citiesInCountriesOfLithuania.put(new City("Vilnius"), new Country("Lithuania"));
+        citiesInCountriesOfLithuania.put(new City("Palanga"), new Country("Lithuania"));
+        System.out.println("Cities of given Country: ");
+        citiesInCountries(citiesInCountriesOfLithuania);
+        //System.out.println("Country for Riga: " + citiesInCountries.get(new City("Riga")));
+        for (City i:citiesInCountriesOfLithuania.keySet()
+             )
+            System.out.println(i);
+        }
     }
-}
+
