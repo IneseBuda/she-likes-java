@@ -23,14 +23,13 @@ public class CountryCities {
               '}';
    }
 
-   public static void addall(CountryCities citiesOfLithuania) {
-   }
+
 
    public void addCountryToList(Country country){countries.add(country);
 
    }
    public void displayCountriesList(){
-       System.out.println("Here are counties to choose " + countries);
+       System.out.println("Here are countries to choose " + countries);
    }
 
    private List<CitiesOfLithuania> citiesOfLithuanias;
@@ -39,8 +38,11 @@ public class CountryCities {
       citiesOfLithuanias.add(citiesOfLithuania);
    }
    public void displayCitiesOfLithuania(){
-      System.out.println("Here are cities of Lithuania" + citiesOfLithuanias);
+      System.out.println("1.Here are cities of Lithuania" + citiesOfLithuanias);
    }
+
+
+
 
    private List<CitiesOfLatvia> citiesOfLatvias;
 
@@ -48,10 +50,12 @@ public class CountryCities {
       citiesOfLatvias.add(citiesOfLatvia);
    }
    public void displayCitiesOfLatvia(){
-      System.out.println("Here are cities of Latvia" + citiesOfLatvias);
+      System.out.println("2.Here are cities of Latvia" + citiesOfLatvias);
    }
 
-
+   public static void addall() {
+      System.out.println("here are all cities from chosen country");
+   }
 }
 
 

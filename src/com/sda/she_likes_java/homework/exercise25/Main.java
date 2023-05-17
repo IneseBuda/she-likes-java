@@ -24,8 +24,8 @@ public class Main {
         citiesOfLithuania.displayCitiesOfLithuania();
 
         CountryCities Country1 = citiesOfLithuania;
-        CountryCities.addall(citiesOfLithuania);
-        System.out.println("Here are cities of Lithuania" + citiesOfLithuania);
+        citiesOfLithuania.addall();
+       System.out.println("Here are cities of Lithuania" + citiesOfLithuania);
 
         CountryCities citiesOfLatvia = new CountryCities();
         CitiesOfLatvia cities3 = new CitiesOfLatvia("Riga");
@@ -35,8 +35,8 @@ public class Main {
         citiesOfLatvia.displayCitiesOfLatvia();
 
         CountryCities Country2 = citiesOfLatvia;
-        Country2.addall(citiesOfLatvia);
-        System.out.println("Here are cities of Latvia" + citiesOfLatvia);
+        citiesOfLatvia.addall();
+       System.out.println("Here are cities of Latvia" + citiesOfLatvia);
 
 
     }
