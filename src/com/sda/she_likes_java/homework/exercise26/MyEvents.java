@@ -1,9 +1,12 @@
 package com.sda.she_likes_java.homework.exercise26;
 
+import java.util.Arrays;
+
 public class MyEvents {
     public static void main(String[] args) {
         System.out.println("Here are my main events:");
         ImportantEvents[] myEvents = ImportantEvents.values();
+        System.out.println(Arrays.toString(myEvents));
         System.out.println("My favorite event is "+ myEvents[0]);
         ImportantEvents myEvent = ImportantEvents.CHRISTMAS;
         System.out.println("It is on "+ myEvent.getDate());
