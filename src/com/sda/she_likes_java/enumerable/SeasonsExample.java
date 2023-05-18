@@ -22,6 +22,6 @@ public class SeasonsExample {
                 Seasons.AUTUMN
         );
 
-
+        System.out.println(seasonList);
     }
 }
