@@ -11,6 +11,7 @@ public class SortingPersonsMain {
         SortedPerson olaf = new SortedPerson("Olaf", 22);
         SortedPerson inese = new SortedPerson("Inese", 12);
         SortedPerson zorro = new SortedPerson("Zorro", 12);
+        SortedPerson zorro1 = new SortedPerson("Zorro", 7);
         SortedPerson zorra = new SortedPerson("Zorra", 12);
         List<SortedPerson> persons = new ArrayList<>();
         persons.add(olaf);
@@ -18,6 +19,7 @@ public class SortingPersonsMain {
         persons.add(zorro);
         persons.add(zorro);
         persons.add(zorra);
+        persons.add(zorro1);
 
         Collections.sort(persons);
 
@@ -45,6 +47,11 @@ public class SortingPersonsMain {
 
         Collections.sort(persons, new ReversedLexicalOrderForSortedPerson());
         System.out.println("Persons reversed sorted by name: " + persons);
+
+   Collections.sort(persons, new LexicalOrderForSortedPerson().reversed().thenComparing(reverseAgeOrder));//this is way how to not revers method put as reversed
+        //puss if names are the same, this method goes to age sorting
+        System.out.println("Persons reversed sorted by name: " + persons);
+
     }
 }
 
