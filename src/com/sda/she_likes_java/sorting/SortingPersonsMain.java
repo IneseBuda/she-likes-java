@@ -2,6 +2,7 @@ package com.sda.she_likes_java.sorting;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class SortingPersonsMain {
@@ -25,7 +26,10 @@ public class SortingPersonsMain {
        // System.out.println("Olaf.compareTo(gustav): "+ olaf.compareTo(inese));
         //System.out.println("Inese.compareTo(zorro): "+ inese.compareTo(zorro));
 
-
+        Comparator<SortedPerson>reverseAgeOrder = new AgedReversedOrderOfSortedPersons();
+        Collections.sort(persons,reverseAgeOrder);
+       // Collections.sort(persons,new AgedReversedOrderOfSortedPersons());//this is the same as above
+        System.out.println("Reversed order based on age: " + persons);
     }
 }
 
