@@ -20,6 +20,5 @@ public class MainMyDate {
         Collections.sort(myDates);
         System.out.println("My events sorted by year: " + myDates);
 
-
     }
 }
