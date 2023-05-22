@@ -20,6 +20,9 @@ public class MainRiversOfLatvia {
        Collections.sort(rivers, comparingRiversByLength.thenComparing(comparingRiversByName));
 
         System.out.println("Sorted with comparator: " + rivers);
+        System.out.println("Sorted my lenght of name");
+
+
 
 
     }
