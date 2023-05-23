@@ -12,7 +12,7 @@ public class PostalCodeMain {
     }catch (PostalCodeException e){
         System.out.println("Incorrect postal code" +e);
     }catch (Exception e){
-        System.out.println("Generic");
+        System.out.println("Generic" +e);
     }
     }
 }
