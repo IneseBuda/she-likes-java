@@ -5,8 +5,9 @@ import java.util.Comparator;
 public class ComparingFruitsByName implements Comparator<Fruits> {
     @Override
     public int compare(Fruits o1, Fruits o2) {
-       String firstFruitName = o1.getName();
-       String secondFruitName = o2.getName();
-       return firstFruitName.compareTo(secondFruitName);
+       //String firstFruitName = o1.getName();
+      // String secondFruitName = o2.getName();
+     //  return firstFruitName.compareTo(secondFruitName);
+        return o2.getName().length()-o1.getName().length();
     }
 }

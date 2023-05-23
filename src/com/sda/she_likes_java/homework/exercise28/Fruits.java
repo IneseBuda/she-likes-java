@@ -34,8 +34,8 @@ public class Fruits {
     }
 
 
-    public char length() {
-        return 0;
-    }
+   // public char length() {
+    //    return 0;
+ //   }
 }
 

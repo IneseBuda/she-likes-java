@@ -13,14 +13,18 @@ public class FruitMain {
         fruits.add(new Fruits("Lemon"));
         fruits.add(new Fruits("Apple"));
 
-ComparingFruitsByName comparingFruitsByName = new ComparingFruitsByName();
-Collections.sort(fruits,comparingFruitsByName);
+        Collections.sort(fruits,new ComparingFruitsByName());
 
-        System.out.println("Sorted by first letter: " + fruits);
+        System.out.println("Sorting by String length" + fruits);
 
-        fruits.sort(Comparator.comparingInt(Fruits::length));
-        System.out.println("Sorting by Sting length");
-        System.out.println(fruits);
+//ComparingFruitsByName comparingFruitsByName = new ComparingFruitsByName();
+//Collections.sort(fruits,comparingFruitsByName);
+
+       // System.out.println("Sorted by first letter: " + fruits);
+
+       // fruits.sort(Comparator.comparingInt(Fruits::length));
+      //  System.out.println("Sorting by Sting length");
+       // System.out.println(fruits);
     }
 
 
