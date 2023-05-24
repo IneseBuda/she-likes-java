@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class DatabaseUtils {
 //Handle internally
-    public static Connection getConnection() throws SQLException {
+    public static Connection getConnection()  {
        try {
             return DriverManager.getConnection("jdbc:h2:tcp://localhost/~/databases/jdbc",
                     "sa",

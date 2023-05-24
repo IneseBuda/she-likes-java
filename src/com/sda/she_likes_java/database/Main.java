@@ -4,13 +4,14 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 public class Main {
-    public static void main(String[] args)  {
-      // Connection con1 = DatabaseUtils.getConnection();
+
+    public static void main(String[] args) {
+        Connection con1 = DatabaseUtils.getConnection();
 
         try {
             DatabaseUtils.getConnectionButSometimesThrowException();
-        }catch(SQLException e){
-            System.out.println("I need to handle It");
+        } catch (SQLException e) {
+            System.out.println("I NEED TO HANDLE IT!!!");
         }
     }
 }
