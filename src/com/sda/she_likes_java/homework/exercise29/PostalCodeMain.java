@@ -3,6 +3,14 @@ package com.sda.she_likes_java.homework.exercise29;
 public class PostalCodeMain {
 
     public static void main(String[] args) {
+
+        char mLetter = 'm';
+        System.out.println("m letter: " + mLetter);
+        int mLetterCode = mLetter;
+        System.out.println("m letter code: " + mLetterCode);
+
+
+
         CheckingPostalCode checkingPostalCode;
         checkingPostalCode= new CheckingPostalCode(null);
 
