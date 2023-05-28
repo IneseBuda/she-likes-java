@@ -34,11 +34,12 @@ public class StudentRepository {
                 String sexFromDb = results.getString("SEX");
                 StudentTable studentTable = new StudentTable(idFromDb, nameFromDb, surnameFromDb, ageFromDb, sexFromDb);
                 records.add(studentTable);
+                System.out.println("id: " + idFromDb + ", name: " + nameFromDb + ", surname" + surnameFromDb + ",age" + ageFromDb + ",sex" + sexFromDb);
             }
 
 
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            System.out.println("Unexpected exception " + e);
         }
         return records;
 
