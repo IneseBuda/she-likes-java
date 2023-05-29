@@ -10,9 +10,11 @@ public class TestRecordProgram {
         TestRecordRepository recordRepository = new TestRecordRepository(connection);
         recordRepository.getAllTestRowsFromDB();
         System.out.println("Let's store some data");
-TestRecord newRecord = new TestRecord(5, "First insert");
+TestRecord newRecord = new TestRecord(7, "First insert");
         recordRepository.storeTestRecordIntoDatabase(newRecord);
 
+        System.out.println("Reading data from db after insert ");
+        recordRepository.getAllTestRowsFromDB();
 
     }
 }
