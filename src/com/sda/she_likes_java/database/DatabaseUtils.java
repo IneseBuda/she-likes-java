@@ -1,5 +1,6 @@
 package com.sda.she_likes_java.database;
 
+import javax.sound.midi.Soundbank;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -35,6 +36,7 @@ public class DatabaseUtils {
                     "sa",
                     "sa");
        } catch (SQLException e) {
+           System.out.println("Exception occured during database connection " + e);
            return  null;
           }
        //  return DriverManager.getConnection(" return DriverManager.getConnection(\"jdbc:h2:~\\\\Data\\\\she-goes-tech\\\\db\",\n" +
