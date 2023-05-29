@@ -16,6 +16,7 @@ public class TestRecordRepository {
     private Connection dbConnection;
 
     public TestRecordRepository(Connection dbConnection) {
+
         this.dbConnection = dbConnection;
     }
 public List<TestRecord> getAllTestRowsFromDB(){

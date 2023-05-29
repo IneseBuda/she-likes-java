@@ -27,9 +27,5 @@ public class DataBaseConnection {
             return null;
         }
     }
-    public static Connection getConnectionButSometimesThrowException() throws SQLException{
-        return DriverManager.getConnection("jdbc:h2:\\Data\\she-goes-tech\\db",
-                "sa",
-                "sa");
-    }
+
 }
