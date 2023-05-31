@@ -26,9 +26,9 @@ public class DbInit {
         try {
             Statement statement = dbConnection.createStatement();
        //create table
-
-            statement.execute(insertDataQuery);
             statement.execute(createTableQuery);
+            statement.execute(insertDataQuery);
+
             //import data to table
 
         } catch (SQLException e) {
