@@ -1,9 +1,6 @@
 package com.sda.she_likes_java.database_in_memory;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 //Create
@@ -16,6 +13,11 @@ public class AccentureStudentsRepository {
             SELECT ID,NAME,SURNAME,AGE,SEX
                 FROM STUDENTS;
             """;
+    private static final String insertStudentQuery = """
+            INSERT INTO STUDENTS (NAME, SURNAME, AGE, SEX)
+            VALUES(?, ?, ?, ?)
+            """;
+
 
     private Connection dbConnection;
     public AccentureStudentsRepository(Connection dbConnection) {
@@ -48,8 +50,40 @@ public class AccentureStudentsRepository {
         return null;
     }
     public AccentureStudent saveStudent(AccentureStudent student){
-        return null;
+
+
+        try {
+            dbConnection.setAutoCommit(false);//this is transaction row
+            //preparing insert query
+            PreparedStatement preparedStatement = dbConnection.prepareStatement(insertStudentQuery);
+            preparedStatement.setString(1,student.getName());
+            preparedStatement.setString(2,student.getSurname());
+            preparedStatement.setInt(3,student.getStudentAge());
+            preparedStatement.setString(4,student.getSex());
+
+            //send query to db
+            int numberOfInsertedRecords =preparedStatement.executeUpdate();
+
+
+            //get id of created record
+            ResultSet generatesId = preparedStatement.getGeneratedKeys();
+            while (generatesId.next()){
+               Integer id= generatesId.getInt("ID");
+               student.setId(id);
+            }
+dbConnection.commit();
+
+        } catch (SQLException e) {
+            try {
+                dbConnection.rollback();
+            } catch (SQLException ex) {
+                throw new RuntimeException(ex);
+            }
+        }
+        System.out.println("Inserted student is: " + student);
+        return student;
     }
+
 
     public boolean deleteStudentById(Long id){
         return true;
