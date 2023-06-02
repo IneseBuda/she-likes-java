@@ -7,7 +7,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ClosingDbConnectionExample {
-    public static void main(String[] args) {
+    public static <connection> void main(String[] args) {
 //        String name = null;
 //        System.out.println(name.length());
 //
@@ -29,8 +29,17 @@ public class ClosingDbConnectionExample {
             }
         }
 
+        System.out.println("now let's use better way to close connection - available since Java 7");
+        System.out.println("Try with resources construction");
+        try(Connection conn = DbConnectionUtils.getConnectionRiskyWay(DbCredentials.h2InMemoryUrl,
+                DbCredentials.h2Username, DbCredentials.h2Password)) {
+
+        } catch (SQLException e) {
+            System.out.println("Some exception: " + e);
+        }
+        }
         //
-    }
+
 
     private static void handleString(String string) {
         if (string != null) {
