@@ -28,6 +28,28 @@ public class LambdaExercises {
         justRun(()->{
             System.out.println("In place");
         });
+
+        Walker johnny = () -> {};
+        johnny.walk();
+
+        Adder longVersion = (int first, int second) -> {
+            return first+second;
+        };
+        //just names of parameters without types
+        Adder shorterVersion = (first, second) -> {
+            return first+second;
+        };
+        Adder compactVersion = (first, second) -> first+second;
+       int sum = compactVersion.addTwoNumbers(1,2);
+        System.out.println("Result " + sum);
+Adder compactVersionWithManyInstruction = (first, second) -> {
+    System.out.println("Performing operation ..");
+    return first+second;
+};
+compactVersionWithManyInstruction.addTwoNumbers(1,4);
+        shorterVersion.addTwoNumbers(2,4);
+
+
     }
 
     public static void justRun(Jogging runner){
