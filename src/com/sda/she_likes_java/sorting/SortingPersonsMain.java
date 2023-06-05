@@ -31,6 +31,9 @@ public class SortingPersonsMain {
 
         Comparator<SortedPerson> reverseAgeOrder = new AgedReversedOrderOfSortedPersons();
         Collections.sort(persons, reverseAgeOrder);
+
+
+
         // Collections.sort(persons,new AgedReversedOrderOfSortedPersons());//this is the same as above
         System.out.println("Reversed order based on age: " + persons);
 
@@ -51,6 +54,21 @@ public class SortingPersonsMain {
    Collections.sort(persons, new LexicalOrderForSortedPerson().reversed().thenComparing(reverseAgeOrder));//this is way how to not revers method put as reversed
         //puss if names are the same, this method goes to age sorting
         System.out.println("Persons reversed sorted by name: " + persons);
+
+        Comparator<SortedPerson> reversAgeOrderLambda = (o1, o2) -> {
+            //  return o2.getAge()< o2.getAge();
+            if (o1.getAge() < o2.getAge()) {
+                return 1;
+            } else if (o1.getAge() > o2.getAge()) {
+                return -1;
+            } else {
+                return 0;
+            }
+
+        };
+        Collections.sort(persons, reversAgeOrderLambda);
+        System.out.println("Lambda " + persons);
+        Comparable<SortedPerson>brokenComparableLambda = o -> 1;//can not use comparable to Lambda because we hav e no other object, just one
 
     }
 }
