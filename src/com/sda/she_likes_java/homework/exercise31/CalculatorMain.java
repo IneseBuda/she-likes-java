@@ -19,15 +19,17 @@ public class CalculatorMain {
 
         Operations addition = () -> {
             System.out.println("Addition");
-           return 0 ;
+
+           return calculator.addition();
         };
-        addition.addition();
+        System.out.println(addition.addition());
+
     }
 
     public static void count(Operations counter) {
         counter.divide();
         counter.multiply();
         counter.subtract();
-        counter.addition();
+
     }
 }
