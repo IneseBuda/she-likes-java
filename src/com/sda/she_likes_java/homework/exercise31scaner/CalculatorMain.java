@@ -9,6 +9,7 @@ public class CalculatorMain {
 
         int first;
         int second;
+
         int selectedNumber;
         Scanner inputReader = new Scanner(System.in);
         System.out.println("Write first number from 0 to 10");
@@ -31,58 +32,20 @@ public class CalculatorMain {
 
         calculator.multiply(first, second);
         int mult = first * second;
-        System.out.println("Subtract :" + mult);
+        System.out.println("Multiply :" + mult);
 
         calculator.divide(first, second);
-        int div = first/second;
-        System.out.println("Subtract :" + div);
-    }
-   /* private static int doTheMath(){
-        int selectedNumber = 0;
-        int first = 0;
-        int second = 0;
-
-        Operations calculator = new Calculator();
-        if(selectedNumber == 2)
-         calculator.subtract(first,second);
-        int sub = first-second;
-        System.out.println("Subtract : " + sub);
-        return sub;
-        };
-    }*/
-
-}
-
-
-       /* Operations calculator = new Calculator();
-        //count(calculator);
-        calculator.subtract();
-        int div = calculator.divide();
+        int div = first / second;
         System.out.println("Divide :" + div);
 
-        calculator.multiply();
-        int mult = calculator.multiply();
-        System.out.println("Multiply : " + mult);
+        Operations addition = (first1, second2) -> {
+            int add = first1 + second2;
+            System.out.println("Addition: " + add);
 
-        calculator.subtract();
-        int sub = calculator.subtract();
-        System.out.println("Subtract : " + sub);
-
-        Operations addition = () -> {
-            System.out.println("Addition");
-
-            return calculator.addition();
+            return first1 + second2;
         };
-        System.out.println(addition.addition());
-
-            return addition.addition();
-        }
-
-
-    public static void count(Operations counter) {
-        counter.divide();
-        counter.multiply();
-        counter.subtract();
+        addition.addition(first, second);
 
     }
-}*/
+}
+

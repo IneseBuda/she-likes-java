@@ -2,10 +2,9 @@ package com.sda.she_likes_java.homework.exercise31scaner;
 
 public class Calculator implements Operations {
     @Override
-    public int addition() {
-        int first = 0;
-        int second = 0;
-        int add = (first + second);
+    public int addition(int first1, int second2) {
+
+        int add = (first1 + second2);
         return add;
     }
 
